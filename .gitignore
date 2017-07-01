@@ -1,0 +1,11 @@
+*.pyc
+*.zip
+build/
+dist/
+release/
+*.spec
+*.7z
+*.rar
+*.exe
+/test
+/test2
