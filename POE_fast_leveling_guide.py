@@ -62,9 +62,17 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
     def buttonsTextClick(self, tab, index):
         print str(tab) + " " + str(index)
-            #temp = self.guide
-        #     with open('guide.json', 'w') as outfile:
-        #         json.dump(temp, outfile)
+        if self.buttonsText[tab, index].isEnabled():
+            self.buttonsText[tab, index].setEnabled(False)
+
+            with open(self.curGuide) as data_file:
+                guideJson = load(data_file)
+                guideActKey = 'act_' + str(tab + 1)
+                guideJson['guide'][guideActKey]['text'][index]['isCompleted'] = True
+
+                temp = guideJson
+                with open(self.curGuide, 'w') as outfile:
+                    json.dump(temp, outfile)
         #     print 'dump'
 
     def buttonsCompleteClick(self, tab, index):
