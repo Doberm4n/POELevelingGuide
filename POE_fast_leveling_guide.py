@@ -92,6 +92,25 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             #     json.dump(temp, outfile)
             self.writeJson(guideJson, self.curGuide)
 
+    def menuActionResetClick(self, tab, count):
+        print str(tab) + str(count)
+        guideJson = self.readJson(self.curGuide) #load(data_file)
+        guideActKey = 'act_' + str(tab + 1)
+        for i in range (count):
+            if not self.buttonsText[tab, i].isEnabled():
+                self.buttonsText[tab, i].setEnabled(True)
+                self.buttonsText[tab, i].setStyleSheet(self.completedStylesheet + self.uncompletedStylesheet)
+
+                #with open(self.curGuide) as data_file:
+
+
+                guideJson['guide'][guideActKey]['text'][i]['isCompleted'] = False
+
+                #temp = guideJson
+                # with open(self.curGuide, 'w') as outfile:
+                #     json.dump(temp, outfile)
+        self.writeJson(guideJson, self.curGuide)
+
     def readJson(self, json_file):
         try:
             with open(json_file) as data_file:
@@ -164,6 +183,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.gridLayouts = [self.gridLayout_1, self.gridLayout_2, self.gridLayout_3, self.gridLayout_4, self.gridLayout_5, self.gridLayout_6, self.gridLayout_7, self.gridLayout_8, self.gridLayout_9, self.gridLayout_10]
         self.scrollAreas = [self.scrollArea_1, self.scrollArea_2, self.scrollArea_3, self.scrollArea_4, self.scrollArea_5, self.scrollArea_6, self.scrollArea_7, self.scrollArea_8, self.scrollArea_9, self.scrollArea_10]
         self.scrollAreaWidgetContents = [self.scrollAreaWidgetContents_1, self.scrollAreaWidgetContents_2, self.scrollAreaWidgetContents_3, self.scrollAreaWidgetContents_4, self.scrollAreaWidgetContents_5, self.scrollAreaWidgetContents_6, self.scrollAreaWidgetContents_7, self.scrollAreaWidgetContents_8, self.scrollAreaWidgetContents_9, self.scrollAreaWidgetContents_10]
+        self.actionsReset = [self.actionAct_1, self.actionAct_2, self.actionAct_3, self.actionAct_4, self.actionAct_5, self.actionAct_6, self.actionAct_7, self.actionAct_8, self.actionAct_9, self.actionAct_10, self.actionReset_All]
 
         # self.font = QtGui.QFont()
         # self.font.setFamily(_fromUtf8("Verdana"))
@@ -286,6 +306,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
                     self.buttonsText[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsTextClick(tabs, i))
                     self.buttonsComplete[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsCompleteClick(tabs, i))
+
+                self.actionsReset[tabs].triggered.connect(lambda clicked, tabs=tabs, i=i: self.menuActionResetClick(tabs, i))
                     #print
                     #self.buttonsText[tabs, i].deleteLater()
                     #self.gridLayouts[1].setColumnStretch(0, 1)

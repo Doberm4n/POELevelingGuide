@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1021</width>
-    <height>807</height>
+    <width>1092</width>
+    <height>825</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -65,8 +65,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout">
@@ -112,8 +112,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_2">
@@ -159,8 +159,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_3">
@@ -206,8 +206,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_4">
@@ -253,8 +253,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_5">
@@ -300,8 +300,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_6">
@@ -347,8 +347,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_7">
@@ -394,8 +394,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_8">
@@ -441,8 +441,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_9">
@@ -488,8 +488,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>977</width>
-             <height>613</height>
+             <width>1048</width>
+             <height>631</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_10">
@@ -529,7 +529,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1021</width>
+     <width>1092</width>
      <height>21</height>
     </rect>
    </property>
@@ -537,10 +537,88 @@
     <property name="title">
      <string>Guide</string>
     </property>
+    <widget class="QMenu" name="menuReset_progress">
+     <property name="title">
+      <string>Reset progress</string>
+     </property>
+     <addaction name="actionAct_1"/>
+     <addaction name="actionAct_2"/>
+     <addaction name="actionAct_3"/>
+     <addaction name="actionAct_4"/>
+     <addaction name="actionAct_5"/>
+     <addaction name="actionAct_6"/>
+     <addaction name="actionAct_7"/>
+     <addaction name="actionAct_8"/>
+     <addaction name="actionAct_9"/>
+     <addaction name="actionAct_10"/>
+     <addaction name="actionReset_All"/>
+    </widget>
+    <addaction name="actionOpen"/>
+    <addaction name="menuReset_progress"/>
    </widget>
    <addaction name="menuGuide"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionAct_1">
+   <property name="text">
+    <string>Act 1</string>
+   </property>
+  </action>
+  <action name="actionAct_2">
+   <property name="text">
+    <string>Act 2</string>
+   </property>
+  </action>
+  <action name="actionAct_3">
+   <property name="text">
+    <string>Act 3</string>
+   </property>
+  </action>
+  <action name="actionAct_4">
+   <property name="text">
+    <string>Act 4</string>
+   </property>
+  </action>
+  <action name="actionAct_5">
+   <property name="text">
+    <string>Act 5</string>
+   </property>
+  </action>
+  <action name="actionAct_6">
+   <property name="text">
+    <string>Act 6</string>
+   </property>
+  </action>
+  <action name="actionAct_7">
+   <property name="text">
+    <string>Act 7</string>
+   </property>
+  </action>
+  <action name="actionAct_8">
+   <property name="text">
+    <string>Act 8</string>
+   </property>
+  </action>
+  <action name="actionAct_9">
+   <property name="text">
+    <string>Act 9</string>
+   </property>
+  </action>
+  <action name="actionAct_10">
+   <property name="text">
+    <string>Act 10</string>
+   </property>
+  </action>
+  <action name="actionReset_All">
+   <property name="text">
+    <string>Reset All</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
