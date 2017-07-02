@@ -52,16 +52,17 @@ class export():
                 act_dict = 'act_' + str(act_number)
                 # delete dictionary
                 del guideJson['guide'][act_dict]['text']
-
+                del guideJson['guide'][act_dict]['isActCompleted']
                 # add dictionary 'text'
                 guideJson['guide'][act_dict].update({'text':[]})
+                guideJson['guide'][act_dict].update({'isActCompleted': False})
 
                 # add text to dictionary
                 # guideJson['guide'][act_dict]['text'].append('ewqewqeqw')
                 # guideJson['guide'][act_dict]['text'].append('ewqewqeqw2')
                 print str(len(text))
                 for j in range (len(text)):
-                     guideJson['guide'][act_dict]['text'].append(text[j])
+                     guideJson['guide'][act_dict]['text'].append({'string': text[j], 'isCompleted': False})
 
 
                     # #
