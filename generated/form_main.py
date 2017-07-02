@@ -40,6 +40,7 @@ class Ui_MainWindow(object):
         self.guideLineEdit.setObjectName(_fromUtf8("guideLineEdit"))
         self.verticalLayout_2.addWidget(self.guideLineEdit)
         self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.label.setObjectName(_fromUtf8("label"))
         self.verticalLayout_2.addWidget(self.label)
         self.tabWidget = QtGui.QTabWidget(self.centralwidget)

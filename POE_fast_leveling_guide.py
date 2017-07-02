@@ -60,7 +60,14 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.loadConfig()
 
 
-    def buttonstest(self, tab, index):
+    def buttonsTextClick(self, tab, index):
+        print str(tab) + " " + str(index)
+            #temp = self.guide
+        #     with open('guide.json', 'w') as outfile:
+        #         json.dump(temp, outfile)
+        #     print 'dump'
+
+    def buttonsCompleteClick(self, tab, index):
         print str(tab) + " " + str(index)
 
 
@@ -69,10 +76,12 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             guideJson = load(data_file)
         if guideJson['curGuide']:
             print "Yes"
-            self.curGuide = os.path.basename(guideJson['curGuide'])
-            self.guideLineEdit.setText(self.curGuide)
-            self.curDir = os.path.dirname(guideJson['curGuide'])
-            self.loadGuide(guideJson["curGuide"])
+            self.curGuide = guideJson["curGuide"]
+            curGuideFilename = os.path.basename(self.curGuide)
+            self.guideLineEdit.setText(curGuideFilename)
+            self.curDir = os.path.dirname(self.curGuide)
+
+            self.loadGuide(self.curGuide)
         else:
             self.curDir = ""
             self.curGuide = ""
@@ -150,7 +159,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         background-color: rgb(224, 0, 0);
         }
         QPushButton:hover {
-        background-color: rgb(235, 255, 232);
+        background-color: rgb(187, 255, 177);
         }
         """
         completedBordersStylesheet = """
@@ -219,8 +228,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 self.buttonsText[tabs, i].setEnabled(not guideJson['guide'][guideActKey]['text'][i]['isCompleted'])
                 self.buttonsComplete[tabs, i].setText("Reset")
 
-                self.buttonsText[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonstest(tabs, i))
-                self.buttonsComplete[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonstest(tabs, i))
+                self.buttonsText[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsTextClick(tabs, i))
+                self.buttonsComplete[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsCompleteClick(tabs, i))
                 #print
 
                 #self.gridLayouts[1].setColumnStretch(0, 1)
