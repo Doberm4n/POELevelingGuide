@@ -122,8 +122,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         for tabs in range (10):
             self.gridLayouts[tabs].setColumnStretch(0, 1)
             self.gridLayouts[tabs].setVerticalSpacing(2)
-            self.scrollAreas[tabs].setGeometry(QtCore.QRect(5, 6, 986, 691))
-            self.scrollAreaWidgetContents[tabs].setGeometry(QtCore.QRect(0, 0, 984, 689))
+            #self.scrollAreas[tabs].setGeometry(QtCore.QRect(5, 6, 986, 691))
+            #self.scrollAreaWidgetContents[tabs].setGeometry(QtCore.QRect(0, 0, 984, 689))
             self.groupBoxes[tabs].setTitle(_translate("MainWindow", "Act " + str(tabs +1 ) + " progress", None))
 
             #self.tabWidget.setTabEnabled(tabs, False)
@@ -141,7 +141,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         completedStylesheet = "QPushButton:!enabled {color: green; text-align: left; }"
         uncompletedStylesheet = "QPushButton {text-align: left; font-weight: 1bold }"
         uncompletedBordersStylesheet = """
-        QPushButton {
+        QPushButton:enabled {
         border: 1px solid grey;
         background-color: white;
         padding: 5;
@@ -150,13 +150,13 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         background-color: rgb(224, 0, 0);
         }
         QPushButton:hover {
-        background-color: grey;
+        background-color: rgb(235, 235, 235);
         }
         """
         completedBordersStylesheet = """
         QPushButton:!enabled {
-        border: 1px solid grey;
-        background-color: white;
+        1border: 1px solid grey;
+        1background-color: white;
         padding: 5;
         }
         QPushButton:pressed {
@@ -208,14 +208,15 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 self.buttonsText[tabs, i].setStyleSheet(completedStylesheet + uncompletedStylesheet + uncompletedBordersStylesheet + completedBordersStylesheet)
                 #self.buttonsText[tabs, i].setStyleSheet()
                 #self.buttons[i].Palette(palette)
-                self.buttonsText[tabs, i].setEnabled(False)
+                #self.buttonsText[tabs, i].setEnabled(False)
                 #self.formLayout.setWidget(i, QtGui.QFormLayout.LabelRole, self.buttons[i])
                 self.gridLayouts[tabs].addWidget(self.buttonsText[tabs, i], i, 0, 1, 1)
                 self.gridLayouts[tabs].addWidget(self.buttonsComplete[tabs, i], i, 1, 1, 1)
                 #self.gridLayout.addWidget(self.buttons[i], 2, 0, 1, 1)
                 # print j
                 #a = None
-                self.buttonsText[tabs, i].setText("  " + guideJson['guide'][guideActKey]['text'][i])
+                self.buttonsText[tabs, i].setText("  " + guideJson['guide'][guideActKey]['text'][i]['string'])
+                self.buttonsText[tabs, i].setEnabled(not guideJson['guide'][guideActKey]['text'][i]['isCompleted'])
                 self.buttonsComplete[tabs, i].setText("Reset")
 
                 self.buttonsText[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonstest(tabs, i))

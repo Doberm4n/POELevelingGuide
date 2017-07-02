@@ -14,568 +14,506 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>1001</width>
-      <height>726</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab_1">
-     <attribute name="title">
-      <string>Act 1</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>6</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="openGuidePushButton">
+      <property name="text">
+       <string>Open guide</string>
       </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="guideLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_1">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_1">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>9</number>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>Act 1</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_1">
+          <property name="widgetResizable">
+           <bool>true</bool>
           </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_1" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
+          <widget class="QWidget" name="scrollAreaWidgetContents_1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
            </property>
-          </layout>
+           <layout class="QFormLayout" name="formLayout">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_1" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Act 2</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_2">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Act 3</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_3">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_3">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Act 4</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_4">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_4">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Act 5</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_5">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_5">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Act 6</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_6">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_6">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Act 7</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_7">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_7">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_7" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Act 8</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_8">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_8">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Act 9</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_9">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_9">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_9">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_9" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>Act 10</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_10">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_10">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>977</width>
+             <height>628</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout_10">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>GroupBox</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_10" columnstretch="0">
+               <property name="verticalSpacing">
+                <number>2</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
        </layout>
       </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Act 2</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_2">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_2">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_2">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_2" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>Act 3</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_3">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>5</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_3">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_3">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_3">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_3" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_4">
-     <attribute name="title">
-      <string>Act 4</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_4">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_4">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_4">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_4">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_4" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_5">
-     <attribute name="title">
-      <string>Act 5</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_5">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_5">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_5">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_5">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_5" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_6">
-     <attribute name="title">
-      <string>Act 6</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_6">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_6">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_6">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_6">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_6" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_7">
-     <attribute name="title">
-      <string>Act 7</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_7">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_7">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_7">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_7">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_7" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_8">
-     <attribute name="title">
-      <string>Act 8</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_8">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_8">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_8">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_8">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_8" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_9">
-     <attribute name="title">
-      <string>Act 9</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_9">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_9">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_9">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_9">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_9" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_10">
-     <attribute name="title">
-      <string>Act 10</string>
-     </attribute>
-     <widget class="QScrollArea" name="scrollArea_10">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>986</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_10">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>984</width>
-         <height>689</height>
-        </rect>
-       </property>
-       <layout class="QFormLayout" name="formLayout_10">
-        <property name="fieldGrowthPolicy">
-         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-        </property>
-        <item row="0" column="0" colspan="2">
-         <widget class="QGroupBox" name="groupBox_10">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="title">
-           <string>GroupBox</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_10" columnstretch="0">
-           <property name="verticalSpacing">
-            <number>2</number>
-           </property>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QLineEdit" name="guideLineEdit">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>331</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="openGuidePushButton">
-    <property name="geometry">
-     <rect>
-      <x>345</x>
-      <y>10</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Open guide</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>15</y>
-      <width>571</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
