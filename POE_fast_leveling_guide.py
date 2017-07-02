@@ -150,7 +150,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         background-color: rgb(224, 0, 0);
         }
         QPushButton:hover {
-        background-color: rgb(235, 235, 235);
+        background-color: rgb(235, 255, 232);
         }
         """
         completedBordersStylesheet = """

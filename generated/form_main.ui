@@ -15,6 +15,12 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>11</number>
+    </property>
+    <property name="bottomMargin">
+     <number>9</number>
+    </property>
     <item>
      <widget class="QPushButton" name="openGuidePushButton">
       <property name="text">
@@ -39,7 +45,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>9</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_1">
        <attribute name="title">
@@ -57,7 +63,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout">
@@ -104,7 +110,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_2">
@@ -151,7 +157,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_3">
@@ -198,7 +204,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_4">
@@ -245,7 +251,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_5">
@@ -292,7 +298,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_6">
@@ -339,7 +345,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_7">
@@ -386,7 +392,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_8">
@@ -433,7 +439,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_9">
@@ -480,7 +486,7 @@
              <x>0</x>
              <y>0</y>
              <width>977</width>
-             <height>628</height>
+             <height>613</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_10">
@@ -524,6 +530,12 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuGuide">
+    <property name="title">
+     <string>Guide</string>
+    </property>
+   </widget>
+   <addaction name="menuGuide"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
