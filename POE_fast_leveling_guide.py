@@ -96,7 +96,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         print str(tab) + str(count)
         guideJson = self.readJson(self.curGuide) #load(data_file)
         guideActKey = 'act_' + str(tab + 1)
-        for i in range (count):
+        for i in range (count + 1):
             if not self.buttonsText[tab, i].isEnabled():
                 self.buttonsText[tab, i].setEnabled(True)
                 self.buttonsText[tab, i].setStyleSheet(self.completedStylesheet + self.uncompletedStylesheet)
@@ -109,6 +109,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 #temp = guideJson
                 # with open(self.curGuide, 'w') as outfile:
                 #     json.dump(temp, outfile)
+        #print "i= " + str(i)
         self.writeJson(guideJson, self.curGuide)
 
     def readJson(self, json_file):
@@ -270,6 +271,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 if not guideJson['guide'][guideActKey]['text']:
                     break
                 for i in range (len(guideJson['guide'][guideActKey]['text'])):
+                    #print str(len(guideJson['guide'][guideActKey]['text']))
                     #print str(len(guideAct))
                     #self.buttonsText.append(tabs, i)
                     #self.buttonsComplete.append(tabs, i)
@@ -307,6 +309,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     self.buttonsText[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsTextClick(tabs, i))
                     self.buttonsComplete[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsCompleteClick(tabs, i))
 
+                #print "i= " + str(i)
                 self.actionsReset[tabs].triggered.connect(lambda clicked, tabs=tabs, i=i: self.menuActionResetClick(tabs, i))
                     #print
                     #self.buttonsText[tabs, i].deleteLater()
