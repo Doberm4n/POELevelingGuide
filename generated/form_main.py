@@ -374,7 +374,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
         self.openGuidePushButton.setText(_translate("MainWindow", "Open guide", None))
-        self.label.setText(_translate("MainWindow", "TextLabel", None))
+        self.label.setText(_translate("MainWindow", "Act progress:", None))
         self.groupBox_1.setTitle(_translate("MainWindow", "GroupBox", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_1), _translate("MainWindow", "Act 1", None))
         self.groupBox_2.setTitle(_translate("MainWindow", "GroupBox", None))
