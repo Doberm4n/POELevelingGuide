@@ -3,6 +3,8 @@ from PyQt4 import QtGui
 from PyQt4 import QtCore
 from PyQt4.QtGui import QDesktopServices
 from PyQt4.QtCore import QUrl
+from PyQt4.QtCore import QEvent
+from PyQt4.QtCore import QObject
 #import res.res
 import sys
 import re
@@ -54,6 +56,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         #global j
 
         self.openGuidePushButton.clicked.connect(self.browseGuide)
+        self.actionReset_All.triggered.connect(self.menuActionResetAll)
 
 
 
@@ -93,24 +96,53 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             self.writeJson(guideJson, self.curGuide)
 
     def menuActionResetClick(self, tab, count):
-        print str(tab) + str(count)
-        guideJson = self.readJson(self.curGuide) #load(data_file)
-        guideActKey = 'act_' + str(tab + 1)
-        for i in range (count + 1):
-            if not self.buttonsText[tab, i].isEnabled():
-                self.buttonsText[tab, i].setEnabled(True)
-                self.buttonsText[tab, i].setStyleSheet(self.completedStylesheet + self.uncompletedStylesheet)
+        #print "resetClick"
+        if self.dialogYesNo('Reset act' + str(tab + 1) + ' progress', "Are you sure?"):
+            print str(tab) + str(count)
+            guideJson = self.readJson(self.curGuide) #load(data_file)
+            guideActKey = 'act_' + str(tab + 1)
+            for i in range (count + 1):
+                if not self.buttonsText[tab, i].isEnabled():
+                    self.buttonsText[tab, i].setEnabled(True)
+                    self.buttonsText[tab, i].setStyleSheet(self.completedStylesheet + self.uncompletedStylesheet)
 
-                #with open(self.curGuide) as data_file:
+                    #with open(self.curGuide) as data_file:
 
 
-                guideJson['guide'][guideActKey]['text'][i]['isCompleted'] = False
+                    guideJson['guide'][guideActKey]['text'][i]['isCompleted'] = False
 
-                #temp = guideJson
-                # with open(self.curGuide, 'w') as outfile:
-                #     json.dump(temp, outfile)
-        #print "i= " + str(i)
-        self.writeJson(guideJson, self.curGuide)
+                    #temp = guideJson
+                    # with open(self.curGuide, 'w') as outfile:
+                    #     json.dump(temp, outfile)
+            #print "i= " + str(i)
+            self.writeJson(guideJson, self.curGuide)
+
+    def menuActionResetAll(self):
+        if self.dialogYesNo('Reset all progress', "Are you sure?"):
+            guideJson = self.readJson(self.curGuide) #load(data_file)
+            for tabs in range (10):
+                    #print "jfklsdfjlkds"
+                    for widget in self.groupBoxes[tabs].children():
+                        #print widget.objectName()
+                        if isinstance(widget, QtGui.QPushButton):
+                            if "guideStringPushButton_" in widget.objectName():
+                                if not widget.isEnabled():
+                                    widget.setEnabled(True)
+                            print "linedit: %s  - %s" %(widget.objectName(),widget.text())
+                            #widget.deleteLater()
+
+                    guideActKey = 'act_' + str(tabs + 1)
+                    for i in range (len(guideJson['guide'][guideActKey]['text'])):
+                        if guideJson['guide'][guideActKey]['text'][i]['isCompleted']:
+                            guideJson['guide'][guideActKey]['text'][i]['isCompleted'] = False
+            self.writeJson(guideJson, self.curGuide)
+
+    def dialogYesNo(self, title, question):
+        result = QtGui.QMessageBox.question(self, title, question, QtGui.QMessageBox.Yes | QtGui.QMessageBox.No, QtGui.QMessageBox.No)
+        if result == QtGui.QMessageBox.Yes:
+            return True
+        else:
+            print False
 
     def readJson(self, json_file):
         try:
@@ -177,8 +209,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
     def prepareGui(self):
 
         self.tabWidget.hide()
-        tabStylesheet = " QTabBar:tab {color: green; }"
-        disabledTabStylesheet = "QTabBar::tab::disabled {width: 0; height: 0; margin: 0; padding: 0; border: none;}"
+        self.completedStylesheet = "QPushButton:!enabled {font-family: Verdana; font-size: 8pt; color: green; text-align: left;  padding: 5;}"
+        self.uncompletedStylesheet = "QPushButton:enabled {font-family: Verdana; font-size: 8pt; text-align: left; border: 1px solid grey; background-color: white; padding: 5; font-weight: 1bold } QPushButton:hover {background-color: rgb(187, 255, 177);}"
+        #self.tabStylesheet = " QTabBar:tab {color: green; }"
+        self.disabledTabStylesheet = "QTabBar::tab::disabled {width: 1; height: 0; margin: 0; padding: 0; border: none;}"
 
         self.groupBoxes = [self.groupBox_1, self.groupBox_2, self.groupBox_3, self.groupBox_4, self.groupBox_5, self.groupBox_6, self.groupBox_7, self.groupBox_8, self.groupBox_9, self.groupBox_10]
         self.gridLayouts = [self.gridLayout_1, self.gridLayout_2, self.gridLayout_3, self.gridLayout_4, self.gridLayout_5, self.gridLayout_6, self.gridLayout_7, self.gridLayout_8, self.gridLayout_9, self.gridLayout_10]
@@ -190,7 +224,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         # self.font.setFamily(_fromUtf8("Verdana"))
         # self.font.setPointSize(8)
 
-        self.tabWidget.setStyleSheet(tabStylesheet)
+        #self.tabWidget.setStyleSheet(self.tabStylesheet)
 
         for tabs in range (10):
             self.gridLayouts[tabs].setColumnStretch(0, 1)
@@ -199,8 +233,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             #self.scrollAreaWidgetContents[tabs].setGeometry(QtCore.QRect(0, 0, 984, 689))
             self.groupBoxes[tabs].setTitle(_translate("MainWindow", "Act " + str(tabs +1 ) + " progress", None))
 
-            #self.tabWidget.setTabEnabled(tabs, False)
-            self.tabWidget.setStyleSheet(disabledTabStylesheet)
+            #
+            self.tabWidget.setStyleSheet(self.disabledTabStylesheet)
 
     def clearButtons(self):
         for tabs in range (10):
@@ -212,6 +246,19 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                         widget.deleteLater()
 
 
+    def eventFilter(self, obj, event):
+        #print "Event filter"
+        if obj and not obj.isEnabled() and event.type() == QEvent.Wheel:
+            #print "Event"
+            newEvent = QtGui.QWheelEvent(obj.mapToParent(event.pos()), event.globalPos(),
+                                   event.delta(), event.buttons(),
+                                   event.modifiers(), event.orientation())
+            QtGui.QApplication.instance().postEvent(obj.parent(), newEvent)
+            #print "QEvent: " + str(event.type())
+            return True
+
+        return QObject.eventFilter(self, obj, event)
+
     def loadGuide(self, guide):
         try:
             #with open(guide) as data_file:
@@ -220,8 +267,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     #guideJson['curGuide'] = self.curGuide
 
             text = []
-            self.completedStylesheet = "QPushButton:!enabled {font-family: Verdana; font-size: 8pt; color: green; text-align: left;  padding: 5;}"
-            self.uncompletedStylesheet = "QPushButton:enabled {font-family: Verdana; font-size: 8pt; text-align: left; border: 1px solid grey; background-color: white; padding: 5; font-weight: 1bold } QPushButton:hover {background-color: rgb(187, 255, 177);}"
+
             # self.uncompletedBordersStylesheet = """
             # QPushButton:enabled {
 
@@ -269,7 +315,9 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             for tabs in range (10):
                 guideActKey = 'act_' + str(tabs + 1)
                 if not guideJson['guide'][guideActKey]['text']:
-                    break
+                    self.tabWidget.setTabEnabled(tabs, False)
+                    print str(tabs)
+                    continue
                 for i in range (len(guideJson['guide'][guideActKey]['text'])):
                     #print str(len(guideJson['guide'][guideActKey]['text']))
                     #print str(len(guideAct))
@@ -278,11 +326,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     #self.buttons.append(QtGui.QPushButton(self.groupBox, text=_fromUtf8("pushButton_" + str(i)),command=lambda i=i: self.buttonstest(i)))
                     self.buttonsText[tabs, i] = QtGui.QPushButton(self.groupBoxes[tabs])
                     self.buttonsComplete[tabs, i] = QtGui.QPushButton(self.groupBoxes[tabs])
-                    self.buttonsText[tabs, i].setObjectName(_fromUtf8("pushButton_" + str(i)))
-                    self.buttonsComplete[tabs, i].setObjectName(_fromUtf8("pushButton_" + str(i)))
-                    self.buttonsText[tabs, i].setText(_translate("MainWindow", "PushButton", None))
-                    self.buttonsComplete[tabs, i].setText(_translate("MainWindow", "PushButton", None))
-
+                    self.buttonsText[tabs, i].setObjectName(_fromUtf8("guideStringPushButton_" + str(i)))
+                    self.buttonsComplete[tabs, i].setObjectName(_fromUtf8("guideStringPushButton_" + str(i)))
+                    self.buttonsText[tabs, i].setText(_translate("MainWindow", "guideStringPushButton", None))
+                    self.buttonsComplete[tabs, i].setText(_translate("MainWindow", "guideStringPushButton", None))
 
                     #self.buttonsText[tabs, i].setFont(self.font)
                     #self.buttonsComplete[tabs, i].setFont(self.font)
@@ -304,13 +351,22 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     #a = None
                     self.buttonsText[tabs, i].setText("  " + guideJson['guide'][guideActKey]['text'][i]['string'])
                     self.buttonsText[tabs, i].setEnabled(not guideJson['guide'][guideActKey]['text'][i]['isCompleted'])
+                    #print str(tabs) + str(i)
+                    self.buttonsText[tabs, i].installEventFilter(self)
+                    #self.buttonsText[tabs, i].ItemIsSelectable = True
+                    #self.buttonsText[tabs, i].ItemIsMovable = True
+
                     self.buttonsComplete[tabs, i].setText("Reset")
 
                     self.buttonsText[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsTextClick(tabs, i))
                     self.buttonsComplete[tabs, i].clicked.connect(lambda clicked, tabs=tabs, i=i: self.buttonsCompleteClick(tabs, i))
 
                 #print "i= " + str(i)
+
+                if self.actionsReset[tabs].triggered:
+                    self.actionsReset[tabs].triggered.disconnect()
                 self.actionsReset[tabs].triggered.connect(lambda clicked, tabs=tabs, i=i: self.menuActionResetClick(tabs, i))
+
                     #print
                     #self.buttonsText[tabs, i].deleteLater()
                     #self.gridLayouts[1].setColumnStretch(0, 1)
