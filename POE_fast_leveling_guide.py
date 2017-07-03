@@ -15,6 +15,7 @@ import json
 import res.res
 #import modules.DPSCalc as DPSCalcModule
 import generated.form_main as GUIMain
+import generated.form_about as GUIAbout
 #import generated.about as GUIAbout
 from Tkinter import Tk
 import ctypes
@@ -26,7 +27,7 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 form = None
 formAbout = None
 version = '0.9.0'
-link = '<a href="https://github.com/Doberm4n/POEWeaponDPSCalculator">Github</a>'
+link = '<a href="https://github.com/Doberm4n/POELevelingGuide">Github</a>'
 
 
 try:
@@ -58,6 +59,9 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
         self.openGuidePushButton.clicked.connect(self.browseGuide)
         self.actionReset_All.triggered.connect(self.menuActionResetAll)
+
+        self.actionAbout.triggered.connect(self.showAbout)
+
 
 
 
@@ -406,9 +410,28 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
         print ""
 
+    def showAbout(self):
+        global formAbout
+        formAbout = aboutDialog()
+        formAbout.show()
 
 
+class aboutDialog(QtGui.QDialog, GUIAbout.Ui_Dialog):
+    def __init__(self):
+        global version
+        global link
+        super(self.__class__, self).__init__()
+        self.setupUi(self)
+        self.setWindowFlags(QtCore.Qt.WindowTitleHint)
+        self.linkLabel.linkActivated.connect(self.openURL)
+        self.versionLabel.setText("v." + version)
+        self.linkLabel.setText(link)
+        pic = self.picLabel
+        pic.setPixmap(QtGui.QPixmap(":todo-icon32.png"))
 
+
+    def openURL(self, linkStr):
+        QDesktopServices.openUrl(QUrl(linkStr))
 
 
 #     def showAbout(self):
@@ -433,6 +456,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
 #     def openURL(self, linkStr):
 #         QDesktopServices.openUrl(QUrl(linkStr))
+
+
 
 
 def main():
