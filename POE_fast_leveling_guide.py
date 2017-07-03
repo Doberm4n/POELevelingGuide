@@ -97,7 +97,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
     def menuActionResetClick(self, tab, count):
         #print "resetClick"
-        if self.dialogYesNo('Reset act' + str(tab + 1) + ' progress', "Are you sure?"):
+        if self.dialogYesNo('Reset', 'Reset act ' + str(tab + 1) + ' progress  \n\nAre you sure?'):
             print str(tab) + str(count)
             guideJson = self.readJson(self.curGuide) #load(data_file)
             guideActKey = 'act_' + str(tab + 1)
@@ -118,7 +118,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             self.writeJson(guideJson, self.curGuide)
 
     def menuActionResetAll(self):
-        if self.dialogYesNo('Reset all progress', "Are you sure?"):
+        if self.dialogYesNo('Reset all', "Reset all progress\n\nAre you sure?"):
             guideJson = self.readJson(self.curGuide) #load(data_file)
             for tabs in range (10):
                     #print "jfklsdfjlkds"
