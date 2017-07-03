@@ -12,6 +12,7 @@ import os
 from json import load
 from json import loads
 import json
+import res.res
 #import modules.DPSCalc as DPSCalcModule
 import generated.form_main as GUIMain
 #import generated.about as GUIAbout
@@ -349,7 +350,14 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     #self.gridLayout.addWidget(self.buttons[i], 2, 0, 1, 1)
                     # print j
                     #a = None
-                    self.buttonsText[tabs, i].setText("  " + guideJson['guide'][guideActKey]['text'][i]['string'])
+
+
+                    tempString = guideJson['guide'][guideActKey]['text'][i]['string']
+                    #if  tempString.find(u'\u2022') >= 0:
+                    if  tempString.find(u'\u25e6') >= 0:
+                        tempString = "     " + tempString
+
+                    self.buttonsText[tabs, i].setText(tempString)
                     self.buttonsText[tabs, i].setEnabled(not guideJson['guide'][guideActKey]['text'][i]['isCompleted'])
                     #print str(tabs) + str(i)
                     self.buttonsText[tabs, i].installEventFilter(self)
@@ -429,10 +437,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
 def main():
     app = QtGui.QApplication(sys.argv)
-    # appIco = QtGui.QIcon()
-    # appIco.addFile(':Device-blockdevice-cubes-icon16.png', QtCore.QSize(16,16))
-    # appIco.addFile(':Device-blockdevice-cubes-icon32.png', QtCore.QSize(32,32))
-    # app.setWindowIcon(appIco)
+    appIco = QtGui.QIcon()
+    appIco.addFile(':todo-icon16.png', QtCore.QSize(16,16))
+    appIco.addFile(':todo-icon32.png', QtCore.QSize(32,32))
+    app.setWindowIcon(appIco)
     form = POE_fast_leveling_guideApp()
     #form.setWindowFlags(QtCore.Qt.WindowTitleHint)
     form.show()

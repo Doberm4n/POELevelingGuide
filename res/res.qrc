@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias='todo-icon16.png'>todo-icon16.png</file>
+    <file alias='todo-icon32.png'>todo-icon32.png</file>
+  </qresource>
+</RCC>
