@@ -12,6 +12,7 @@ import os
 from json import load
 from json import loads
 import json
+import gc
 import res.res
 #import modules.DPSCalc as DPSCalcModule
 import generated.form_main_test as GUIMain
@@ -267,8 +268,13 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
         tabs_count = self.tabWidget.count()
         print "tabs_count = " + str(tabs_count)
-        for i in range (tabs_count, -1, -1):
-            self.tabWidget.removeTab(i)
+        #print self.tabWidget.widget(0).objectName()
+        for i in range (tabs_count -1, -1, -1):
+            #self.tabWidget.removeTab(i)
+            self.tabWidget.widget(i).close()
+            self.tabWidget.widget(i).deleteLater()
+            #del self.tabWidget.widget(i)
+        gc.collect()
 
     def eventFilter(self, obj, event):
         #print "Event filter"
@@ -358,10 +364,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             for tabs in range (tabsCount):
                 guideActKey = 'act_' + str(tabs + 1)
                 if not guideJson['guide']['tabs'][tabs]['text']:
-                    self.tabWidget.setTabEnabled(tabs, False)
+                    #self.tabWidget.setTabEnabled(tabs, False)
                     #self.tabWidget.setStyleSheet(self.disabledtabsylesheet)
-                    print str(tabs)
-                    continue
+                    print "tabs " + str(tabs)
+                    #continue
 
 
 
@@ -406,11 +412,25 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 self.gridLayouts[tabs].setVerticalSpacing(2)
 
 
-                if not self.firstTab:
-                     self.tabWidget.setCurrentIndex(tabs)
-                     self.firstTab = True
 
-                for i in range (len(guideJson['guide']['tabs'][tabs]['text'])):
+
+                textLength = len(guideJson['guide']['tabs'][tabs]['text'])
+                if (not self.firstTab) and (textLength > 0):
+                      self.tabWidget.setCurrentIndex(tabs)
+                      self.firstTab = True
+                i = 0
+                if textLength == 0:
+                    print "Length = 0"
+                    self.tabWidget.setTabEnabled(0, False)
+                    tabs_count = self.tabWidget.count()
+                    print "tabs_count = " + str(tabs_count)
+                    print self.tabWidget.widget(10).objectName()
+                print "Length " + str(tabs) + " " + str(textLength)
+                for i in range (textLength):
+                    #print "i= " + str(i)
+                    #if
+                        #print ""
+                        #break
                     #print str(len(guideJson['guide'][guideActKey]['text']))
                     #print str(len(guideAct))
                     #self.buttonsText.append(tabs, i)
