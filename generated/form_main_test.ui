@@ -38,7 +38,7 @@
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Act progress:</string>
+       <string>Progress:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -71,20 +71,17 @@
      <property name="title">
       <string>Reset progress</string>
      </property>
-     <addaction name="actionAct_1"/>
-     <addaction name="actionAct_2"/>
-     <addaction name="actionAct_3"/>
-     <addaction name="actionAct_4"/>
-     <addaction name="actionAct_5"/>
-     <addaction name="actionAct_6"/>
-     <addaction name="actionAct_7"/>
-     <addaction name="actionAct_8"/>
-     <addaction name="actionAct_9"/>
-     <addaction name="actionAct_10"/>
      <addaction name="actionReset_All"/>
+    </widget>
+    <widget class="QMenu" name="menuComplete_progress">
+     <property name="title">
+      <string>Complete progress</string>
+     </property>
+     <addaction name="actionComplete_All"/>
     </widget>
     <addaction name="menuActionOpen"/>
     <addaction name="menuReset_progress"/>
+    <addaction name="menuComplete_progress"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -92,7 +89,15 @@
     </property>
     <addaction name="actionAbout"/>
    </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionCreate_empty_guide_file"/>
+    <addaction name="actionImport_text_to_guide"/>
+   </widget>
    <addaction name="menuGuide"/>
+   <addaction name="menuTools"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -153,12 +158,27 @@
   </action>
   <action name="actionReset_All">
    <property name="text">
-    <string>Reset All</string>
+    <string>Reset all</string>
    </property>
   </action>
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionCreate_empty_guide_file">
+   <property name="text">
+    <string>Create empty guide file</string>
+   </property>
+  </action>
+  <action name="actionImport_text_to_guide">
+   <property name="text">
+    <string>Import text to guide</string>
+   </property>
+  </action>
+  <action name="actionComplete_All">
+   <property name="text">
+    <string>Complete all</string>
    </property>
   </action>
  </widget>
