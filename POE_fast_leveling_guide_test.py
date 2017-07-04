@@ -14,7 +14,7 @@ from json import loads
 import json
 import res.res
 #import modules.DPSCalc as DPSCalcModule
-import generated.form_main as GUIMain
+import generated.form_main_test as GUIMain
 import generated.form_about as GUIAbout
 #import generated.about as GUIAbout
 from Tkinter import Tk
@@ -167,7 +167,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
              print "Error: " + str(e)
 
     def loadConfig(self):
-        try:
+        #try:
             # with open('Configs\config.json') as data_file:
             guideJson = self.readJson('Configs\config.json') #load(data_file)
             if guideJson['curGuide']:
@@ -182,8 +182,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 self.curDir = ""
                 self.curGuide = ""
                 print "No"
-        except Exception, e:
-             print "Error: " + str(e)
+        # except Exception, e:
+        #      print "Error: " + str(e)
 
     def loadGuide(self, guide):
         print ""
@@ -219,12 +219,13 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.completedStylesheet = "QPushButton:!enabled {font-family: Verdana; font-size: 8pt; color: green; text-align: left;  padding: 5;}"
         self.uncompletedStylesheet = "QPushButton:enabled {font-family: Verdana; font-size: 8pt; text-align: left; border: 1px solid grey; background-color: white; padding: 5; font-weight: 1bold } QPushButton:hover {background-color: rgb(187, 255, 177);}"
         #self.tabStylesheet = " QTabBar:tab {color: green; }"
-        self.disabledTabStylesheet = "QTabBar::tab::disabled {width: 1; height: 0; margin: 0; padding: 0; border: none;}"
+        #self.disabledTabStylesheet = "QTabBar::tab::disabled {width: 1; height: 0; margin: 0; padding: 0; border: none;}"
+        self.disabledTabStylesheet = ""
 
-        self.groupBoxes = [self.groupBox_1, self.groupBox_2, self.groupBox_3, self.groupBox_4, self.groupBox_5, self.groupBox_6, self.groupBox_7, self.groupBox_8, self.groupBox_9, self.groupBox_10]
-        self.gridLayouts = [self.gridLayout_1, self.gridLayout_2, self.gridLayout_3, self.gridLayout_4, self.gridLayout_5, self.gridLayout_6, self.gridLayout_7, self.gridLayout_8, self.gridLayout_9, self.gridLayout_10]
-        self.scrollAreas = [self.scrollArea_1, self.scrollArea_2, self.scrollArea_3, self.scrollArea_4, self.scrollArea_5, self.scrollArea_6, self.scrollArea_7, self.scrollArea_8, self.scrollArea_9, self.scrollArea_10]
-        self.scrollAreaWidgetContents = [self.scrollAreaWidgetContents_1, self.scrollAreaWidgetContents_2, self.scrollAreaWidgetContents_3, self.scrollAreaWidgetContents_4, self.scrollAreaWidgetContents_5, self.scrollAreaWidgetContents_6, self.scrollAreaWidgetContents_7, self.scrollAreaWidgetContents_8, self.scrollAreaWidgetContents_9, self.scrollAreaWidgetContents_10]
+        self.groupBoxes_original = [self.groupBox_1, self.groupBox_2, self.groupBox_3, self.groupBox_4, self.groupBox_5, self.groupBox_6, self.groupBox_7, self.groupBox_8, self.groupBox_9, self.groupBox_10]
+        self.gridLayouts_original = [self.gridLayout_1, self.gridLayout_2, self.gridLayout_3, self.gridLayout_4, self.gridLayout_5, self.gridLayout_6, self.gridLayout_7, self.gridLayout_8, self.gridLayout_9, self.gridLayout_10]
+        self.scrollAreas_original = [self.scrollArea_1, self.scrollArea_2, self.scrollArea_3, self.scrollArea_4, self.scrollArea_5, self.scrollArea_6, self.scrollArea_7, self.scrollArea_8, self.scrollArea_9, self.scrollArea_10]
+        self.scrollAreaWidgetContents_original = [self.scrollAreaWidgetContents_1, self.scrollAreaWidgetContents_2, self.scrollAreaWidgetContents_3, self.scrollAreaWidgetContents_4, self.scrollAreaWidgetContents_5, self.scrollAreaWidgetContents_6, self.scrollAreaWidgetContents_7, self.scrollAreaWidgetContents_8, self.scrollAreaWidgetContents_9, self.scrollAreaWidgetContents_10]
         self.actionsReset = [self.actionAct_1, self.actionAct_2, self.actionAct_3, self.actionAct_4, self.actionAct_5, self.actionAct_6, self.actionAct_7, self.actionAct_8, self.actionAct_9, self.actionAct_10, self.actionReset_All]
 
         # self.font = QtGui.QFont()
@@ -234,19 +235,23 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         #self.tabWidget.setStyleSheet(self.tabStylesheet)
 
         for tabs in range (10):
-            self.gridLayouts[tabs].setColumnStretch(0, 1)
-            self.gridLayouts[tabs].setVerticalSpacing(2)
-            #self.scrollAreas[tabs].setGeometry(QtCore.QRect(5, 6, 986, 691))
-            #self.scrollAreaWidgetContents[tabs].setGeometry(QtCore.QRect(0, 0, 984, 689))
-            self.groupBoxes[tabs].setTitle(_translate("MainWindow", "Act " + str(tabs +1 ) + " progress", None))
+            self.gridLayouts_original[tabs].setColumnStretch(0, 1)
+            self.gridLayouts_original[tabs].setVerticalSpacing(2)
+
+
+            #self.scrollAreas_original[tabs].setGeometry(QtCore.QRect(5, 6, 986, 691))
+            #self.scrollAreaWidgetContents_original[tabs].setGeometry(QtCore.QRect(0, 0, 984, 689))
+
+
+            self.groupBoxes_original[tabs].setTitle(_translate("MainWindow", "Act " + str(tabs +1 ) + " progress", None))
 
             #
-            self.tabWidget.setStyleSheet(self.disabledTabStylesheet)
+        self.tabWidget.setStyleSheet(self.disabledTabStylesheet)
 
     def clearButtons(self):
         for tabs in range (10):
                 #print "jfklsdfjlkds"
-                for widget in self.groupBoxes[tabs].children():
+                for widget in self.groupBoxes_original[tabs].children():
                     #print widget.objectName()
                     if isinstance(widget, QtGui.QPushButton):
                         #print "linedit: %s  - %s" %(widget.objectName(),widget.text())
@@ -267,7 +272,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         return QObject.eventFilter(self, obj, event)
 
     def loadGuide(self, guide):
-        try:
+        #try:
             #with open(guide) as data_file:
             guideJson = self.readJson(guide) #load(data_file)
 
@@ -301,6 +306,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             # """
             # self.isGuideLoaded = True
             # if self.isGuideLoaded:
+
             self.clearButtons()
 
             self.buttonsText = None
@@ -309,6 +315,15 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             self.buttonsText = {}
             self.buttonsComplete = {}
 
+            self.tabs = {}
+            self.verticalLayouts = {}
+            self.scrollAreas = {}
+            self.scrollAreaWidgetContents = {}
+            self.groupBoxes = {}
+            self.formLayouts = {}
+            self.gridLayouts = {}
+
+            tabsT = 11
 
 
             # self.buttonsText[0,1] = 1
@@ -319,20 +334,71 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             self.tabWidget.show()
             # palette = QtGui.QPalette
             # palette.setColor(QtGui.QPalette.Shadow, QtGui.QColor('red'))
-            for tabs in range (10):
+            tabsCount = len(guideJson['guide']['tabs'])
+            for tabs in range (tabsCount):
                 guideActKey = 'act_' + str(tabs + 1)
-                if not guideJson['guide'][guideActKey]['text']:
+                if not guideJson['guide']['tabs'][tabs]['text']:
                     self.tabWidget.setTabEnabled(tabs, False)
+                    #self.tabWidget.setStyleSheet(self.disabledTabStylesheet)
                     print str(tabs)
                     continue
-                for i in range (len(guideJson['guide'][guideActKey]['text'])):
+
+
+
+                self.tabs[tabsT] = QtGui.QWidget()
+                self.tabs[tabsT].setObjectName(_fromUtf8("tab_" + str(tabsT)))
+
+                self.verticalLayouts[tabsT] = QtGui.QVBoxLayout(self.tabs[tabsT])
+                self.verticalLayouts[tabsT].setContentsMargins(-1, -1, -1, 9)
+                self.verticalLayouts[tabsT].setSpacing(11)
+                self.verticalLayouts[tabsT].setObjectName(_fromUtf8("verticalLayout_" + str(tabsT)))
+
+                self.scrollAreas[tabsT] = QtGui.QScrollArea(self.tabs[tabsT])
+                self.scrollAreas[tabsT].setWidgetResizable(True)
+                self.scrollAreas[tabsT].setObjectName(_fromUtf8("scrollArea_" + str(tabsT)))
+
+                self.scrollAreaWidgetContents[tabsT] = QtGui.QWidget()
+                self.scrollAreaWidgetContents[tabsT].setGeometry(QtCore.QRect(0, 0, 1048, 631))
+                self.scrollAreaWidgetContents[tabsT].setObjectName(_fromUtf8("scrollAreaWidgetContents_" + str(tabsT)))
+
+                self.formLayouts[tabsT] = QtGui.QFormLayout(self.scrollAreaWidgetContents[tabsT])
+                self.formLayouts[tabsT].setFieldGrowthPolicy(QtGui.QFormLayout.AllNonFixedFieldsGrow)
+                self.formLayouts[tabsT].setObjectName(_fromUtf8("formLayout" + str(tabsT)))
+
+                self.groupBoxes[tabsT] = QtGui.QGroupBox(self.scrollAreaWidgetContents[tabsT])
+
+
+                sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+                sizePolicy.setHorizontalStretch(0)
+                sizePolicy.setVerticalStretch(0)
+                sizePolicy.setHeightForWidth(self.groupBoxes[tabsT].sizePolicy().hasHeightForWidth())
+                self.groupBoxes[tabsT].setSizePolicy(sizePolicy)
+                self.groupBoxes[tabsT].setObjectName(_fromUtf8("groupBox_" + str(tabsT)))
+                self.gridLayouts[tabsT] = QtGui.QGridLayout(self.groupBoxes[tabsT])
+                self.gridLayouts[tabsT].setVerticalSpacing(2)
+                self.gridLayouts[tabsT].setObjectName(_fromUtf8("gridLayout_" + str(tabsT)))
+                self.formLayouts[tabsT].setWidget(0, QtGui.QFormLayout.SpanningRole, self.groupBoxes[tabsT])
+                self.scrollAreas[tabsT].setWidget(self.scrollAreaWidgetContents[tabsT])
+                self.verticalLayouts[tabsT].addWidget(self.scrollAreas[tabsT])
+                self.tabWidget.addTab(self.tabs[tabsT], _fromUtf8(""))
+
+
+
+
+                for i in range (len(guideJson['guide']['tabs'][tabs]['text'])):
                     #print str(len(guideJson['guide'][guideActKey]['text']))
                     #print str(len(guideAct))
                     #self.buttonsText.append(tabs, i)
                     #self.buttonsComplete.append(tabs, i)
                     #self.buttons.append(QtGui.QPushButton(self.groupBox, text=_fromUtf8("pushButton_" + str(i)),command=lambda i=i: self.buttonstest(i)))
-                    self.buttonsText[tabs, i] = QtGui.QPushButton(self.groupBoxes[tabs])
-                    self.buttonsComplete[tabs, i] = QtGui.QPushButton(self.groupBoxes[tabs])
+
+
+
+
+                    #self.groupBoxes_original[tabs].setTitle(_translate("MainWindow", guideJson['guide']['tabs'][7]['name'] + " progress", None))
+
+                    self.buttonsText[tabs, i] = QtGui.QPushButton(self.groupBoxes_original[tabs])
+                    self.buttonsComplete[tabs, i] = QtGui.QPushButton(self.groupBoxes_original[tabs])
                     self.buttonsText[tabs, i].setObjectName(_fromUtf8("guideStringPushButton_" + str(i)))
                     self.buttonsComplete[tabs, i].setObjectName(_fromUtf8("guideStringPushButton_" + str(i)))
                     self.buttonsText[tabs, i].setText(_translate("MainWindow", "guideStringPushButton", None))
@@ -351,20 +417,20 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     #self.buttons[i].Palette(palette)
                     #self.buttonsText[tabs, i].setEnabled(False)
                     #self.formLayout.setWidget(i, QtGui.QFormLayout.LabelRole, self.buttons[i])
-                    self.gridLayouts[tabs].addWidget(self.buttonsText[tabs, i], i, 0, 1, 1)
-                    self.gridLayouts[tabs].addWidget(self.buttonsComplete[tabs, i], i, 1, 1, 1)
+                    self.gridLayouts_original[tabs].addWidget(self.buttonsText[tabs, i], i, 0, 1, 1)
+                    self.gridLayouts_original[tabs].addWidget(self.buttonsComplete[tabs, i], i, 1, 1, 1)
                     #self.gridLayout.addWidget(self.buttons[i], 2, 0, 1, 1)
                     # print j
                     #a = None
 
 
-                    tempString = guideJson['guide'][guideActKey]['text'][i]['string']
+                    tempString = guideJson['guide']['tabs'][tabs]['text'][i]['string']
                     #if  tempString.find(u'\u2022') >= 0:
                     if  tempString.find(u'\u25e6') >= 0:
                         tempString = "     " + tempString
 
                     self.buttonsText[tabs, i].setText(tempString)
-                    self.buttonsText[tabs, i].setEnabled(not guideJson['guide'][guideActKey]['text'][i]['isCompleted'])
+                    self.buttonsText[tabs, i].setEnabled(not guideJson['guide']['tabs'][tabs]['text'][i]['isCompleted'])
                     #print str(tabs) + str(i)
                     self.buttonsText[tabs, i].installEventFilter(self)
                     #self.buttonsText[tabs, i].ItemIsSelectable = True
@@ -402,9 +468,9 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
             self.statusbar.clearMessage()
 
-        except Exception, e:
-            self.tabWidget.hide()
-            self.statusbar.showMessage("Error in loading guide: " + str(e))
+        # except Exception, e:
+        #     self.tabWidget.hide()
+        #     self.statusbar.showMessage("Error in loading guide: " + str(e))
 
     def clearGuide(self):
 

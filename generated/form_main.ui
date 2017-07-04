@@ -112,8 +112,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_2">
@@ -159,8 +159,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_3">
@@ -206,8 +206,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_4">
@@ -253,8 +253,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_5">
@@ -300,8 +300,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_6">
@@ -347,8 +347,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_7">
@@ -394,8 +394,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_8">
@@ -441,8 +441,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_9">
@@ -488,8 +488,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>1048</width>
-             <height>631</height>
+             <width>98</width>
+             <height>51</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_10">
@@ -553,7 +553,7 @@
      <addaction name="actionAct_10"/>
      <addaction name="actionReset_All"/>
     </widget>
-    <addaction name="actionOpen"/>
+    <addaction name="menuActionOpen"/>
     <addaction name="menuReset_progress"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
@@ -566,7 +566,7 @@
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionOpen">
+  <action name="menuActionOpen">
    <property name="text">
     <string>Open</string>
    </property>
