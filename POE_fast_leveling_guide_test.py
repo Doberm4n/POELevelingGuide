@@ -223,10 +223,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         #self.disabledtabsylesheet = "QTabBar::tab::disabled {width: 1; height: 0; margin: 0; padding: 0; border: none;}"
         self.disabledtabsylesheet = ""
 
-        self.groupBoxes_original = [self.groupBox_1, self.groupBox_2, self.groupBox_3, self.groupBox_4, self.groupBox_5, self.groupBox_6, self.groupBox_7, self.groupBox_8, self.groupBox_9, self.groupBox_10]
-        self.gridLayouts_original = [self.gridLayout_1, self.gridLayout_2, self.gridLayout_3, self.gridLayout_4, self.gridLayout_5, self.gridLayout_6, self.gridLayout_7, self.gridLayout_8, self.gridLayout_9, self.gridLayout_10]
-        self.scrollAreas_original = [self.scrollArea_1, self.scrollArea_2, self.scrollArea_3, self.scrollArea_4, self.scrollArea_5, self.scrollArea_6, self.scrollArea_7, self.scrollArea_8, self.scrollArea_9, self.scrollArea_10]
-        self.scrollAreaWidgetContents_original = [self.scrollAreaWidgetContents_1, self.scrollAreaWidgetContents_2, self.scrollAreaWidgetContents_3, self.scrollAreaWidgetContents_4, self.scrollAreaWidgetContents_5, self.scrollAreaWidgetContents_6, self.scrollAreaWidgetContents_7, self.scrollAreaWidgetContents_8, self.scrollAreaWidgetContents_9, self.scrollAreaWidgetContents_10]
+        # self.groupBoxes_original = [self.groupBox_1, self.groupBox_2, self.groupBox_3, self.groupBox_4, self.groupBox_5, self.groupBox_6, self.groupBox_7, self.groupBox_8, self.groupBox_9, self.groupBox_10]
+        # self.gridLayouts_original = [self.gridLayout_1, self.gridLayout_2, self.gridLayout_3, self.gridLayout_4, self.gridLayout_5, self.gridLayout_6, self.gridLayout_7, self.gridLayout_8, self.gridLayout_9, self.gridLayout_10]
+        # self.scrollAreas_original = [self.scrollArea_1, self.scrollArea_2, self.scrollArea_3, self.scrollArea_4, self.scrollArea_5, self.scrollArea_6, self.scrollArea_7, self.scrollArea_8, self.scrollArea_9, self.scrollArea_10]
+        # self.scrollAreaWidgetContents_original = [self.scrollAreaWidgetContents_1, self.scrollAreaWidgetContents_2, self.scrollAreaWidgetContents_3, self.scrollAreaWidgetContents_4, self.scrollAreaWidgetContents_5, self.scrollAreaWidgetContents_6, self.scrollAreaWidgetContents_7, self.scrollAreaWidgetContents_8, self.scrollAreaWidgetContents_9, self.scrollAreaWidgetContents_10]
         self.actionsReset = [self.actionAct_1, self.actionAct_2, self.actionAct_3, self.actionAct_4, self.actionAct_5, self.actionAct_6, self.actionAct_7, self.actionAct_8, self.actionAct_9, self.actionAct_10, self.actionReset_All]
 
         # self.font = QtGui.QFont()
@@ -235,16 +235,16 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
         #self.tabWidget.setStyleSheet(self.tabsylesheet)
 
-        for tabs in range (10):
-            self.gridLayouts_original[tabs].setColumnStretch(0, 1)
-            self.gridLayouts_original[tabs].setVerticalSpacing(2)
+        # for tabs in range (10):
+        #     self.gridLayouts_original[tabs].setColumnStretch(0, 1)
+        #     self.gridLayouts_original[tabs].setVerticalSpacing(2)
 
 
-            #self.scrollAreas_original[tabs].setGeometry(QtCore.QRect(5, 6, 986, 691))
-            #self.scrollAreaWidgetContents_original[tabs].setGeometry(QtCore.QRect(0, 0, 984, 689))
+        #     #self.scrollAreas_original[tabs].setGeometry(QtCore.QRect(5, 6, 986, 691))
+        #     #self.scrollAreaWidgetContents_original[tabs].setGeometry(QtCore.QRect(0, 0, 984, 689))
 
 
-            self.groupBoxes_original[tabs].setTitle(_translate("MainWindow", "Act " + str(tabs +1 ) + " progress", None))
+        #     self.groupBoxes_original[tabs].setTitle(_translate("MainWindow", "Act " + str(tabs +1 ) + " progress", None))
 
             #
         self.tabWidget.setStyleSheet(self.disabledtabsylesheet)
@@ -270,9 +270,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         print "tabs_count = " + str(tabs_count)
         #print self.tabWidget.widget(0).objectName()
         for i in range (tabs_count -1, -1, -1):
-            #self.tabWidget.removeTab(i)
+            #
             self.tabWidget.widget(i).close()
             self.tabWidget.widget(i).deleteLater()
+            self.tabWidget.removeTab(i)
             #del self.tabWidget.widget(i)
         gc.collect()
 
@@ -355,8 +356,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             #self.tabWidget.repaint()
             self.tabWidget.show()
 
-
-
+            tabs_count = self.tabWidget.count()
+            print "tabs_count init = " + str(tabs_count)
 
             # palette = QtGui.QPalette
             # palette.setColor(QtGui.QPalette.Shadow, QtGui.QColor('red'))
@@ -421,10 +422,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 i = 0
                 if textLength == 0:
                     print "Length = 0"
-                    self.tabWidget.setTabEnabled(0, False)
+                    self.tabWidget.setTabEnabled(tabs, False)
                     tabs_count = self.tabWidget.count()
                     print "tabs_count = " + str(tabs_count)
-                    print self.tabWidget.widget(10).objectName()
+                    #print self.tabWidget.widget(10).objectName()
                 print "Length " + str(tabs) + " " + str(textLength)
                 for i in range (textLength):
                     #print "i= " + str(i)
