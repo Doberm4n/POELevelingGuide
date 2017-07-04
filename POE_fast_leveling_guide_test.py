@@ -106,10 +106,11 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
     def menuActionResetClick(self, tab, count):
         #print "resetClick"
-        if self.dialogYesNo('Reset', 'Reset act ' + str(tab + 1) + ' progress  \n\nAre you sure?'):
+        guideJson = self.readJson(self.curGuide)
+        if self.dialogYesNo('Reset', 'Reset ' + guideJson['guide']['tabs'][tab]['name'] + '\n\nAre you sure?'):
             print str(tab) + str(count)
-            guideJson = self.readJson(self.curGuide) #load(data_file)
-            guideActKey = 'act_' + str(tab + 1)
+             #load(data_file)
+            #guideActKey = 'act_' + str(tab + 1)
             for i in range (count + 1):
                 if not self.buttonsText[tab, i].isEnabled():
                     self.buttonsText[tab, i].setEnabled(True)
@@ -118,7 +119,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     #with open(self.curGuide) as data_file:
 
 
-                    guideJson['guide'][guideActKey]['text'][i]['isCompleted'] = False
+                    guideJson['guide']['tabs'][tab]['text'][i]['isCompleted'] = False
 
                     #temp = guideJson
                     # with open(self.curGuide, 'w') as outfile:
@@ -229,7 +230,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         # self.scrollAreas_original = [self.scrollArea_1, self.scrollArea_2, self.scrollArea_3, self.scrollArea_4, self.scrollArea_5, self.scrollArea_6, self.scrollArea_7, self.scrollArea_8, self.scrollArea_9, self.scrollArea_10]
         # self.scrollAreaWidgetContents_original = [self.scrollAreaWidgetContents_1, self.scrollAreaWidgetContents_2, self.scrollAreaWidgetContents_3, self.scrollAreaWidgetContents_4, self.scrollAreaWidgetContents_5, self.scrollAreaWidgetContents_6, self.scrollAreaWidgetContents_7, self.scrollAreaWidgetContents_8, self.scrollAreaWidgetContents_9, self.scrollAreaWidgetContents_10]
         self.actionsReset = [self.actionAct_1, self.actionAct_2, self.actionAct_3, self.actionAct_4, self.actionAct_5, self.actionAct_6, self.actionAct_7, self.actionAct_8, self.actionAct_9, self.actionAct_10, self.actionReset_All]
-
+        self.menuActionResets = {}
         # self.font = QtGui.QFont()
         # self.font.setFamily(_fromUtf8("Verdana"))
         # self.font.setPointSize(8)
@@ -277,6 +278,14 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             self.tabWidget.removeTab(i)
             #del self.tabWidget.widget(i)
         gc.collect()
+
+    def clearMenuActionReset(self):
+        if self.menuActionResets:
+            print "self.menuReset_progress.widget.count()"
+            for value in self.menuActionResets.values():
+                self.menuReset_progress.removeAction(value)
+                #value.
+            self.menuActionResets = {}
 
     def eventFilter(self, obj, event):
         #print "Event filter"
@@ -329,6 +338,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
             #self.clearButtons()
             self.clearTabs()
+            self.clearMenuActionReset()
 
 
             self.buttonsText = None
@@ -344,6 +354,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             self.groupBoxes = {}
             self.formLayouts = {}
             self.gridLayouts = {}
+            #self.menuActionResets = {}
 
             self.firstTab = False
 
@@ -416,10 +427,19 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
 
 
+
+
                 textLength = len(guideJson['guide']['tabs'][tabs]['text'])
                 if (not self.firstTab) and (textLength > 0):
                       self.tabWidget.setCurrentIndex(tabs)
                       self.firstTab = True
+
+                if textLength > 0:
+                    self.menuActionResets[tabs] = QtGui.QAction(self)
+                    self.menuActionResets[tabs].setObjectName(_fromUtf8("actionReset_" + str(tabs)))
+                    self.menuReset_progress.addAction(self.menuActionResets[tabs])
+                    self.menuActionResets[tabs].setText(_translate("MainWindow", guideJson['guide']['tabs'][tabs]['name'], None))
+
                 i = 0
                 if textLength == 0:
                     print "Length = 0"
@@ -490,9 +510,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
                 #print "i= " + str(i)
 
-                if self.actionsReset[tabs].triggered:
-                    self.actionsReset[tabs].triggered.disconnect()
-                self.actionsReset[tabs].triggered.connect(lambda clicked, tabs=tabs, i=i: self.menuActionResetClick(tabs, i))
+                if textLength > 0:
+                    if self.menuActionResets[tabs].triggered:
+                        self.menuActionResets[tabs].triggered.disconnect()
+                    self.menuActionResets[tabs].triggered.connect(lambda clicked, tabs=tabs, i=i: self.menuActionResetClick(tabs, i))
 
                     #print
                     #self.buttonsText[tabs, i].deleteLater()
