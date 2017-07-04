@@ -20,3 +20,6 @@ with open('guide_new.json') as data_file:
 # 	print key
 
 print jsonGuide['guide']['tabs'][7]['name']
+
+for i in range(10, -1, -1):
+	print i
