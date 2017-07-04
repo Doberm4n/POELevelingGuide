@@ -128,9 +128,9 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             self.writeJson(guideJson, self.curGuide)
 
     def menuActionResetAll(self):
-        if self.dialogYesNo('Reset all', "Reset all progress\n\nAre you sure?"):
+        if self.dialogYesNo('Reset all', "Reset all\n\nAre you sure?"):
             guideJson = self.readJson(self.curGuide) #load(data_file)
-            for tabs in range (10):
+            for tabs in range (self.tabWidget.count()):
                     #print "jfklsdfjlkds"
                     for widget in self.groupBoxes[tabs].children():
                         #print widget.objectName()
@@ -141,10 +141,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                             print "linedit: %s  - %s" %(widget.objectName(),widget.text())
                             #widget.deleteLater()
 
-                    guideActKey = 'act_' + str(tabs + 1)
-                    for i in range (len(guideJson['guide'][guideActKey]['text'])):
-                        if guideJson['guide'][guideActKey]['text'][i]['isCompleted']:
-                            guideJson['guide'][guideActKey]['text'][i]['isCompleted'] = False
+                    #guideActKey = 'act_' + str(tabs + 1)
+                    for i in range (len(guideJson['guide']['tabs'][tabs]['text'])):
+                        if guideJson['guide']['tabs'][tabs]['text'][i]['isCompleted']:
+                            guideJson['guide']['tabs'][tabs]['text'][i]['isCompleted'] = False
             self.writeJson(guideJson, self.curGuide)
 
     def dialogYesNo(self, title, question):
