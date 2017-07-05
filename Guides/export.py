@@ -26,22 +26,22 @@ def createGuideAndImportText():
             for j in range (len(text)):
                 jsonData['guide']['tabs'][i]['text'].append({'string': text[j], 'isCompleted':False})
 
-        guideName = gettext('Guide name', 'Please enter guide name:')
+        guideName = gettext1('Guide name', 'Please enter guide name:')
         guideAuthor = gettext('Guide author', 'Please enter guide author:')
         guideNotes = gettext('Guide notes', 'Please enter guide notes:')
         guideVersion = gettext('Guide version', 'Please enter guide version:')
         guideURL = gettext('Guide url', 'Please enter guide url:')
         guideDate = dateNow
         guideTime = timeNow
-        jsonData['common']['info'].update({"name": guideName, "author": guideAuthor, "notes": guideNotes, "version": guideVersion, "date": guideDate, "time": guideTime, "URL": guideURL})
+        jsonData['guide']['info'].update({"name": guideName, "author": guideAuthor, "notes": guideNotes, "version": guideVersion, "date": guideDate, "time": guideTime, "URL": guideURL})
         jsonFileName = getJsonFileName()
         if jsonFileName:
             writeJson(jsonData, jsonFileName)
 
 def gettext(title, question):
-      text, ok = QtGui.QInputDialog.getText(None, title, question)
+      text, ok = QTGui.QInputDialog.getText(None, title, question)
       if ok:
-         return str(text)
+         return text
 
 def getJsonFileName():
     newName = QtGui.QFileDialog.getSaveFileName(None, 'Text Input Dialog', directory=os.getcwd(), filter='*.json')
