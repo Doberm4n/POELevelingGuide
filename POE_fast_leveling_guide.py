@@ -52,26 +52,12 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         super(self.__class__, self).__init__()
         self.setupUi(self)
         self.prepareGui()
-        # self.pasteButton.clicked.connect(self.pasteFromClipboard)
-        # self.actionAbout.triggered.connect(self.showAbout)
-        # tab1 = QtGui.QScrollArea()
-        # tab1.setWidget(QtGui.QWidget())
-        # self.scrollArea.setWidget(QtGui.QWidget())
-        # self.verticalLayout = QtGui.QVBoxLayout(tab1.widget())
-        #global j
-
         self.openGuidePushButton.clicked.connect(self.browseGuide)
         self.actionReset_All.triggered.connect(self.menuActionResetAll)
         self.actionComplete_All.triggered.connect(self.menuActionCompleteAll)
-
         self.menuActionOpen.triggered.connect(self.browseGuide)
-
         self.actionAbout.triggered.connect(self.showAbout)
         self.actionCreate_empty_guide_file.triggered.connect(export.createGuideAndImportText)
-
-
-
-
         self.loadConfig()
 
 
@@ -610,6 +596,8 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             if not self.firstTab:
                 self.tabWidget.hide()
             self.setWindowTitle(self.windowTitle + " - " + os.path.basename(guide) + ' (' + os.path.dirname(guide) + ')')
+            guideInfo = guideJson['common']['info']
+            self.guideLineEdit.setText(guideInfo['name'] + " " + guideInfo['version'] + " (" + guideInfo['date'] + " " + guideInfo['time'] + ")" + " by " + guideInfo['author'] + " (" + guideInfo['notes'] + ")")
             self.statusbar.clearMessage()
 
         # except Exception, e:
