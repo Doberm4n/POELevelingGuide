@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 from PyQt4 import QtGui
 from PyQt4 import QtCore
-from PyQt4.QtGui import QDesktopServices
-from PyQt4.QtCore import QUrl
-from PyQt4.QtCore import QEvent
-from PyQt4.QtCore import QObject
 from json import load
 from json import loads
 import json
 import os
 import sys
 import time
-import export_test as GUIMain
+#import export_test as GUIMain
 
 class export():
 
