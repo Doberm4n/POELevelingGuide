@@ -59,12 +59,12 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.actionComplete_All.triggered.connect(self.menuActionCompleteAll)
         self.menuActionOpen.triggered.connect(self.browseGuide)
         self.actionAbout.triggered.connect(self.showAbout)
-        self.actionCreate_empty_guide_file.triggered.connect(export.createGuideAndImportText)
+        self.actionCreate_empty_guide_file.triggered.connect(lambda: export.createGuideAndImportText(self))
 
         self.loadConfig()
 
     def buttonsTextClick(self, tab, index):
-        print str(tab) + " " + str(index)
+        #print str(tab) + " " + str(index)
         if self.buttonsText[tab, index].isEnabled():
             self.buttonsText[tab, index].setEnabled(False)
             guideJson = self.readJson(self.curGuide)
@@ -109,7 +109,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
     def menuActionCompleteClick(self, tab, count):
         guideJson = self.readJson(self.curGuide)
         if self.dialogYesNo('Complete', 'Complete ' + guideJson['guide']['tabs'][tab]['name'] + '\n\nAre you sure?'):
-            print str(tab) + str(count)
+            #print str(tab) + str(count)
             for i in range (count + 1):
                 if  self.buttonsText[tab, i].isEnabled():
                     self.buttonsText[tab, i].setEnabled(False)
@@ -119,6 +119,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
     def menuActionCompleteAll(self):
         if self.dialogYesNo('Complete all', "Complete all\n\nAre you sure?"):
+            #print "curGuide: " + self.curGuide
             guideJson = self.readJson(self.curGuide)
             for tabs in range (self.tabWidget.count()):
                     for widget in self.groupBoxes[tabs].children():
@@ -137,28 +138,30 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         if result == QtGui.QMessageBox.Yes:
             return True
         else:
-            print False
+            return False
 
     def readJson(self, json_file):
-        try:
-            with open(json_file) as data_file:
-                return load(data_file)
-        except Exception, e:
-             print "Error: " + str(e)
+        if json_file:
+            try:
+                with open(json_file) as data_file:
+                    return load(data_file)
+            except Exception, e:
+                 print "Error: " + str(e)
 
     def writeJson(self, dump, json_file):
-        try:
-            print ""
-            with open(json_file, 'w') as outfile:
-                    json.dump(dump, outfile)
-        except Exception, e:
-             print "Error: " + str(e)
+        if json_file:
+            try:
+                #print ""
+                with open(json_file, 'w') as outfile:
+                        json.dump(dump, outfile)
+            except Exception, e:
+                 print "Error: " + str(e)
 
     def loadConfig(self):
         try:
             guideJson = self.readJson('Configs\config.json')
             if guideJson['curGuide']:
-                print "Yes"
+                #print "Yes"
                 self.curGuide = guideJson["curGuide"]
                 curGuideFilename = os.path.basename(self.curGuide)
                 self.guideLineEdit.setText(curGuideFilename)
@@ -167,7 +170,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             else:
                 self.curDir = ""
                 self.curGuide = ""
-                print "No"
+                #print "No"
         except Exception, e:
              print "Error in loading config: " + str(e)
 
@@ -201,7 +204,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
     def clearTabs(self):
         tabs_count = self.tabWidget.count()
-        print "tabs_count = " + str(tabs_count)
+        #print "tabs_count = " + str(tabs_count)
         for i in range (tabs_count -1, -1, -1):
             self.tabWidget.widget(i).close()
             self.tabWidget.widget(i).deleteLater()
@@ -210,14 +213,14 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
     def clearMenuActionReset(self):
         if self.menuActionResets:
-            print "self.menuReset_progress.widget.count()"
+            #print "self.menuReset_progress.widget.count()"
             for value in self.menuActionResets.values():
                 self.menuReset_progress.removeAction(value)
             self.menuActionResets = {}
 
     def clearMenuActionProgress(self):
         if self.menuActionProgress:
-            print "self.menuReset_progress.widget.count()"
+            #print "self.menuReset_progress.widget.count()"
             for value in self.menuActionProgress.values():
                 self.menuComplete_progress.removeAction(value)
             self.menuActionProgress = {}
@@ -307,10 +310,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 if textLength == 0:
                     #print "Length = 0"
                     self.tabWidget.setTabEnabled(tabs, False)
-                    self.tabWidget.widget(0).hide()
-                    tabs_count = self.tabWidget.count()
+                    #self.tabWidget.widget(0).hide()
+                    #tabs_count = self.tabWidget.count()
                     #print "tabs_count = " + str(tabs_count)
-                print "Length " + str(tabs) + " " + str(textLength)
+                #print "Length " + str(tabs) + " " + str(textLength)
                 for i in range (textLength):
                     self.buttonsText[tabs, i] = QtGui.QPushButton(self.groupBoxes[tabs])
                     self.buttonsComplete[tabs, i] = QtGui.QPushButton(self.groupBoxes[tabs])

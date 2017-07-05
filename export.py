@@ -8,7 +8,8 @@ import sys
 import time
 
 
-def createGuideAndImportText():
+def createGuideAndImportText(self):
+    #print self.curGuide
     data = {"common":{"info":{"name":"","author":"","notes":"","version": "","date":"","time":"","URL":""}},"guide":{"tabs":[]}}
     temp = json.dumps(data)
     jsonData = loads(temp)
@@ -37,6 +38,17 @@ def createGuideAndImportText():
         jsonFileName = getJsonFileName()
         if jsonFileName:
             writeJson(jsonData, jsonFileName)
+            writeConfigAndLoadGuide(self, jsonFileName)
+
+
+
+def writeConfigAndLoadGuide(self, jsonFileName):
+            self.curGuide = str(jsonFileName)
+            guideJson = self.readJson('Configs\config.json')
+            guideJson['curGuide'] = self.curGuide
+            self.writeJson(guideJson, 'Configs\config.json')
+            self.guideLineEdit.setText(os.path.basename(self.curGuide))
+            self.loadGuide(self.curGuide)
 
 def gettext(title, question):
       text, ok = QtGui.QInputDialog.getText(None, title, question)

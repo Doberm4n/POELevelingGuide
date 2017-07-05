@@ -1,16 +1,1 @@
-{
-  "common": {
-    "info": {
-      "name": "",
-      "author": "",
-      "notes": "",
-      "version": "",
-      "date": "",
-      "time": "",
-      "URL": ""
-    }
-  },
-  "guide": {
-    "tabs": []
-  }
-}
+{"common": {"info": {"name": "", "author": "", "URL": "", "notes": "", "version": "", "time": "", "date": ""}}, "guide": {"tabs": []}}
