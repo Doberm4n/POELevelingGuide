@@ -276,6 +276,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.actionsReset = [self.actionAct_1, self.actionAct_2, self.actionAct_3, self.actionAct_4, self.actionAct_5, self.actionAct_6, self.actionAct_7, self.actionAct_8, self.actionAct_9, self.actionAct_10, self.actionReset_All]
         self.menuActionResets = {}
         self.menuActionProgress = {}
+        self.windowTitle = 'PoE Leveling Guide'
         # self.font = QtGui.QFont()
         # self.font.setFamily(_fromUtf8("Verdana"))
         # self.font.setPointSize(8)
@@ -382,6 +383,9 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             # if self.isGuideLoaded:
 
             #self.clearButtons()
+            self.setWindowTitle(self.windowTitle)
+
+
             self.clearTabs()
             self.clearMenuActionReset()
 
@@ -592,6 +596,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
 
             if not self.firstTab:
                 self.tabWidget.hide()
+            self.setWindowTitle(self.windowTitle + " - " + os.path.basename(guide) + ' (' + os.path.dirname(guide) + ')')
             self.statusbar.clearMessage()
 
         # except Exception, e:

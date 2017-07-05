@@ -20,7 +20,7 @@ class export():
         #super(self.__class__, self).__init__()
         self.curDir = os.getcwd()
     #     # try:
-        self.test()
+        self.createGuideAndImportText()
 
     def test(self):
         data = {"common": {  "info": {} }, "guide": {  "tabs": [] }}
@@ -47,6 +47,45 @@ class export():
                         for lines in range (len(self.text)):
                             self.text[lines] = self.text[lines].replace("\n", '')
                 jsonData['guide']['tabs'].append({'text': [], 'name': os.path.splitext(os.path.basename(str(filesToImport[i])))[0], 'isActCompleted':False})
+                for j in range (len(self.text)):
+
+                    jsonData['guide']['tabs'][i]['text'].append({'string': self.text[j], 'isCompleted':False})
+            #jsonData['guide']['tabs'].append()
+            jsonFileName = self.getJsonFileName()
+            if jsonFileName:
+                self.writeJson(jsonData, jsonFileName)
+        #del jsonData['guide']['tabs']
+        #json1 = load(jsonData)
+        #jsonData = json.dumps(jsonData)
+        #print jsonData
+        #return newName
+
+    def createGuideAndImportText(self):
+        data = {"common":{"info":{"name":"","author":"","notes":"","version": "","date":"","time":""}},"guide":{"tabs":[]}}
+        temp = json.dumps(data)
+        # jsonData['common'] = "{}"
+        jsonData = loads(temp)
+        dateNow = time.strftime("%d.%m.%Y")
+        timeNow = time.strftime("%H:%M:%S")
+        #self.writeJson(jsonData, self.getJsonFileName())
+        #print  jsonData['guide']['tabs'][0]
+        #jsonData = None
+        #jsonData = self.readJson(self.browseFiles())
+        #print jsonData['guide']['tabs']
+        #del jsonData['guide']['tabs']
+        filesToImport = self.browseFiles()
+        #print filesToImport[0]
+        #print os.path.splitext(os.path.basename(str(filesToImport[0])))[0]
+        if filesToImport:
+            filesToImport.sort()
+            for i in range (len(filesToImport)):
+                with open(filesToImport[i]) as f:
+                        self.text = f.readlines()
+                        #print text_filename
+                        #print str(len(self.text))
+                        for lines in range (len(self.text)):
+                            self.text[lines] = self.text[lines].replace("\n", '')
+                jsonData['guide']['tabs'].append({'text': [], 'name': os.path.splitext(os.path.basename(str(filesToImport[i])))[0].replace('_', ' '), 'isActCompleted':False})
                 for j in range (len(self.text)):
 
                     jsonData['guide']['tabs'][i]['text'].append({'string': self.text[j], 'isCompleted':False})

@@ -1,6 +1,13 @@
 {
   "common": {
-    "info": {}
+    "info": {
+      "name": "",
+      "author": "",
+      "notes": "",
+      "version": "",
+      "date": "",
+      "time": ""
+    }
   },
   "guide": {
     "tabs": []
