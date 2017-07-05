@@ -9,6 +9,12 @@ import sys
 import time
 #import export_test as GUIMain
 
+
+
+def testtest():
+    file = QtGui.QFileDialog.getOpenFileNames(None, "Select the file to add", directory=os.getcwd(), filter='*.txt')
+    print ""
+
 class export():
 
 
@@ -219,18 +225,18 @@ class export():
                 self.clearLists()
                 self.populateLists(self.curDir)
 
-def main():
-    app = QtGui.QApplication(sys.argv)
-    # appIco = QtGui.QIcon()
-    # appIco.addFile(':todo-icon16.png', QtCore.QSize(16,16))
-    # appIco.addFile(':todo-icon32.png', QtCore.QSize(32,32))
-    # app.setWindowIcon(appIco)
-    form = export()
-    #form.setWindowFlags(QtCore.Qt.WindowTitleHint)
-    #form.show()
-    app.exec_()
-    #export.test()
+# def main():
+#     app = QtGui.QApplication(sys.argv)
+#     # appIco = QtGui.QIcon()
+#     # appIco.addFile(':todo-icon16.png', QtCore.QSize(16,16))
+#     # appIco.addFile(':todo-icon32.png', QtCore.QSize(32,32))
+#     # app.setWindowIcon(appIco)
+#     form = export()
+#     #form.setWindowFlags(QtCore.Qt.WindowTitleHint)
+#     #form.show()
+#     app.exec_()
+#     #export.test()
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

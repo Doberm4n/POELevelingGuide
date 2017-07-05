@@ -168,7 +168,7 @@
   </action>
   <action name="actionCreate_empty_guide_file">
    <property name="text">
-    <string>Create empty guide file</string>
+    <string>Create guide file</string>
    </property>
   </action>
   <action name="actionImport_text_to_guide">

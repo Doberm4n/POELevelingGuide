@@ -20,6 +20,7 @@ import generated.form_about as GUIAbout
 #import generated.about as GUIAbout
 from Tkinter import Tk
 import ctypes
+import Guides.export
 
 
 myappid = 'mycompany.myproduct.subproduct.version'
@@ -65,6 +66,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.menuActionOpen.triggered.connect(self.browseGuide)
 
         self.actionAbout.triggered.connect(self.showAbout)
+        self.actionCreate_empty_guide_file.triggered.connect(Guides.export.testtest)
 
 
 

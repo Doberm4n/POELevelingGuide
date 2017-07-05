@@ -134,7 +134,7 @@ class Ui_MainWindow(object):
         self.actionAct_10.setText(_translate("MainWindow", "Act 10", None))
         self.actionReset_All.setText(_translate("MainWindow", "Reset all", None))
         self.actionAbout.setText(_translate("MainWindow", "About", None))
-        self.actionCreate_empty_guide_file.setText(_translate("MainWindow", "Create empty guide file", None))
+        self.actionCreate_empty_guide_file.setText(_translate("MainWindow", "Create guide file", None))
         self.actionImport_text_to_guide.setText(_translate("MainWindow", "Import text to guide", None))
         self.actionComplete_All.setText(_translate("MainWindow", "Complete all", None))
 
