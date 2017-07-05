@@ -1,15 +1,93 @@
 # -*- coding: utf-8 -*-
+from PyQt4 import QtGui
+from PyQt4 import QtCore
+from PyQt4.QtGui import QDesktopServices
+from PyQt4.QtCore import QUrl
+from PyQt4.QtCore import QEvent
+from PyQt4.QtCore import QObject
 from json import load
 from json import loads
 import json
 import os
+import sys
+import time
+import export_test as GUIMain
 
 class export():
 
 
     def __init__(self):
-        curDir = os.getcwd()
-        # try:
+        #super(self.__class__, self).__init__()
+        self.curDir = os.getcwd()
+    #     # try:
+        self.test()
+
+    def test(self):
+        data = {"common": {  "info": {} }, "guide": {  "tabs": [] }}
+        temp = json.dumps(data)
+        # jsonData['common'] = "{}"
+        jsonData = loads(temp)
+        dateNow = time.strftime("%d.%m.%Y")
+        timeNow = time.strftime("%H:%M:%S")
+        #self.writeJson(jsonData, self.getJsonFileName())
+        #print  jsonData['guide']['tabs'][0]
+        #jsonData = None
+        #jsonData = self.readJson(self.browseFiles())
+        #print jsonData['guide']['tabs']
+        #del jsonData['guide']['tabs']
+        filesToImport = self.browseFiles()
+        #print filesToImport[0]
+        #print os.path.splitext(os.path.basename(str(filesToImport[0])))[0]
+        if filesToImport:
+            for i in range (len(filesToImport)):
+                with open(filesToImport[i]) as f:
+                        self.text = f.readlines()
+                        #print text_filename
+                        #print str(len(self.text))
+                        for lines in range (len(self.text)):
+                            self.text[lines] = self.text[lines].replace("\n", '')
+                jsonData['guide']['tabs'].append({'text': [], 'name': os.path.splitext(os.path.basename(str(filesToImport[i])))[0], 'isActCompleted':False})
+                for j in range (len(self.text)):
+
+                    jsonData['guide']['tabs'][i]['text'].append({'string': self.text[j], 'isCompleted':False})
+            #jsonData['guide']['tabs'].append()
+            jsonFileName = self.getJsonFileName()
+            if jsonFileName:
+                self.writeJson(jsonData, jsonFileName)
+        #del jsonData['guide']['tabs']
+        #json1 = load(jsonData)
+        #jsonData = json.dumps(jsonData)
+        #print jsonData
+        #return newName
+
+    def getJsonFileName(self):
+        newName = QtGui.QFileDialog.getSaveFileName(None, 'Text Input Dialog', directory=self.curDir, filter='*.json')
+        # if ok and newName:
+        #     print "ok"
+        return newName
+
+    def browseFiles(self):
+        file = QtGui.QFileDialog.getOpenFileNames(None, "Select the file to add", directory=self.curDir, filter='*.txt')
+        fileNames = list(file)
+        return fileNames
+
+
+    def readJson(self, json_file):
+        try:
+            with open(json_file) as data_file:
+                return load(data_file)
+        except Exception, e:
+             print "Error: " + str(e)
+
+    def writeJson(self, dump, json_file):
+        try:
+            print ""
+            with open(json_file, 'w') as outfile:
+                    json.dump(dump, outfile)
+        except Exception, e:
+             print "Error: " + str(e)
+
+    def start(self):
         f = None
 
         for text_files in range (10):
@@ -106,4 +184,18 @@ class export():
                 self.clearLists()
                 self.populateLists(self.curDir)
 
-export = export()
+def main():
+    app = QtGui.QApplication(sys.argv)
+    # appIco = QtGui.QIcon()
+    # appIco.addFile(':todo-icon16.png', QtCore.QSize(16,16))
+    # appIco.addFile(':todo-icon32.png', QtCore.QSize(32,32))
+    # app.setWindowIcon(appIco)
+    form = export()
+    #form.setWindowFlags(QtCore.Qt.WindowTitleHint)
+    #form.show()
+    app.exec_()
+    #export.test()
+
+
+if __name__ == '__main__':
+    main()
