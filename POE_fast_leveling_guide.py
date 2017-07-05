@@ -196,11 +196,11 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.windowTitle = 'PoE Leveling Guide'
         self.tabWidget.setStyleSheet(self.disabledtabsylesheet)
 
-    def clearButtons(self):
-        for tabs in range (10):
-                for widget in self.groupBoxes_original[tabs].children():
-                    if isinstance(widget, QtGui.QPushButton):
-                        widget.deleteLater()
+    # def clearButtons(self):
+    #     for tabs in range (10):
+    #             for widget in self.groupBoxes_original[tabs].children():
+    #                 if isinstance(widget, QtGui.QPushButton):
+    #                     widget.deleteLater()
 
     def clearTabs(self):
         tabs_count = self.tabWidget.count()

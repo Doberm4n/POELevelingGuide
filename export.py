@@ -16,31 +16,41 @@ def createGuideAndImportText(self):
     dateNow = time.strftime("%d.%m.%Y")
     timeNow = time.strftime("%H:%M:%S")
     filesToImport = browseFiles()
+    textInfo = ""
+    guideStringCount = 0
     if filesToImport:
-        filesToImport.sort()
+        #filesToImport.sort()
         for i in range (len(filesToImport)):
             with open(filesToImport[i]) as f:
                     text = f.readlines()
+                    filename = os.path.splitext(os.path.basename(str(filesToImport[i])))[0]
+                    if filename.startswith("_info"):
+                        print "Found info"
+                        textInfo = text
+                        continue
                     for lines in range (len(text)):
                        text[lines] = text[lines].replace("\n", '')
-            jsonData['guide']['tabs'].append({'text': [], 'name': os.path.splitext(os.path.basename(str(filesToImport[i])))[0].replace('_', ' '), 'isActCompleted':False})
+            jsonData['guide']['tabs'].append({'text': [], 'name': filename.replace('_', ' '), 'isActCompleted':False})
             for j in range (len(text)):
-                jsonData['guide']['tabs'][i]['text'].append({'string': text[j], 'isCompleted':False})
+                jsonData['guide']['tabs'][guideStringCount]['text'].append({'string': text[j], 'isCompleted':False})
+            guideStringCount += 1
 
-        guideName = gettext('Guide name', 'Please enter guide name:')
-        guideAuthor = gettext('Guide author', 'Please enter guide author:')
-        guideNotes = gettext('Guide notes', 'Please enter guide notes:')
-        guideVersion = gettext('Guide version', 'Please enter guide version:')
-        guideURL = gettext('Guide url', 'Please enter guide url:')
+
         guideDate = dateNow
         guideTime = timeNow
-        jsonData['common']['info'].update({"name": guideName, "author": guideAuthor, "notes": guideNotes, "version": guideVersion, "date": guideDate, "time": guideTime, "URL": guideURL})
+        if textInfo:
+            jsonData['common']['info'].update({"name": textInfo[0], "author": textInfo[1], "notes": textInfo[2], "version": textInfo[3], "date": guideDate, "time": guideTime, "URL": textInfo[4]})
+        else:
+            guideName = gettext('Guide name', 'Please enter guide name:')
+            guideAuthor = gettext('Guide author', 'Please enter guide author:')
+            guideNotes = gettext('Guide notes', 'Please enter guide notes:')
+            guideVersion = gettext('Guide version', 'Please enter guide version:')
+            guideURL = gettext('Guide url', 'Please enter guide url:')
+            jsonData['common']['info'].update({"name": guideName, "author": guideAuthor, "notes": guideNotes, "version": guideVersion, "date": guideDate, "time": guideTime, "URL": guideURL})
         jsonFileName = getJsonFileName()
         if jsonFileName:
             writeJson(jsonData, jsonFileName)
             writeConfigAndLoadGuide(self, jsonFileName)
-
-
 
 def writeConfigAndLoadGuide(self, jsonFileName):
             self.curGuide = str(jsonFileName)
