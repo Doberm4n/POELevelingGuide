@@ -25,7 +25,7 @@ def createGuideAndImportText(self):
                     text = f.readlines()
                     filename = os.path.splitext(os.path.basename(str(filesToImport[i])))[0]
                     if filename.startswith("_info"):
-                        print "Found info"
+                        #print "Found info"
                         textInfo = text
                         continue
                     for lines in range (len(text)):
