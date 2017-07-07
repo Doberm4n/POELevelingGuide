@@ -30,7 +30,7 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 form = None
 formAbout = None
 version = '0.9.0'
-link = '<a href="https://github.com/Doberm4n/POELevelingGuide">Github</a>'
+link = '<a href="https://github.com/Doberm4n/POELevelingGuide">GitHub</a>'
 
 
 try:
