@@ -2,7 +2,7 @@
 Defeat Blackguards and aquire "Lost in Love"
 The Sarn Encampment
 The Slums
-The Crematorium (get wp, complete Library, get Tolman's Bracelet)
+The Crematorium (get wp, complete trial, get Tolman's Bracelet)
 Town (complete "Lost in Love")
 The Slums (find Sewer Grating)
 The Sewers (get wp, find the 3 Platinum Busts)
@@ -11,7 +11,7 @@ The Sewers (get wp, find the 3 Platinum Busts)
 The Marketplace (get wp, find Ornate Chests)
 #The Market Sewers (get last Platinum Bust)
 #The Marketplace
-The Catacombs (complete library)
+The Catacombs (complete trial)
 Town (receive quest reward for "Victorio’s Secrets") (+1 SP, +2 RP)
 The Battlefront (get wp, find Ribbon Spool)
 The Docks (get wp, talk to fairgraves & find Thaumetic Sulphate, farm here until you feel strong enough to progress)
@@ -25,7 +25,7 @@ Town (complete "Piety's Pets ") (+2 SP)
 The Ebony Barracks
 The Imperial Gardens (get wp)
 The Library (get wp, get to The Archives, complete "A Fixture of Fate")
-The Hedge Maze (complete library, get Chitu's Plum)
+The Hedge Maze (complete trial)
 The Docks (complete "A Swig of Hope")
 Town
 The Imperial Gardens
