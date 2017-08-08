@@ -11,17 +11,25 @@ The Ridge (get WP)
 The Lower Prison (get WP, complete trial)
 Shavronne's Tower
 Prison Rooftop, kill Shavronne
-
-
-
 The Prisoner's Gate (wp)
-Valley of the Fire Drinker & start fight with Abberath
-The Gloven Pass
-Valley of the Fire Drinker & kill Abberath
-
+Valley of the Fire Drinker - The Gloven Pass -Valley of the Fire Drinker (kill Abberath)
 Town (Complete "The Father of War" ) (+1 SP)
 Complete "Essence of Umbra" 
-Complete "The Cloven One" (Bestel).
+Complete "The Cloven One" (Bestel) (+1 SP)
+The Prisoner's Gate
+The Western Forest (get WP)
+The Riverways (get WP, find a break in the road, that will lead you to next area)
+The Wetlands
+The Spawning Grounds, defeat The Puppet Mistres
+Town Complete "The Puppet Mistress" (Tarkleigh) (+1 SP)
+
+The Riverways
+The Southern Forest (get WP)
+The Cavern of Anger
+The Beacon (get WP) Light up The Beacon Sail to The Brine King's Reef
+The Brine King's Reef (get WP)
+The Brine King's Throne, kill The Brine King
+
 
 WP+SP: , go to , , enter . Enter , , go to . (Tarkleigh).
 
@@ -29,8 +37,8 @@ WP+E(RI+LB): The Ridge, go to , E: LB, go to , go to . (Tarkleigh).
 
 WT+SP: , go to , go to , go to . 
 
-WP+SP: The Prisoner's Gate, go to The Western Forest (get WP), go to The Riverways (get WP, find a break in the road, that will lead you to next area), go to The Wetlands, go to The Spawning Grounds, defeat The Puppet Mistress. Complete "The Puppet Mistress" (Tarkleigh).
+WP+SP: , go to , go to , go to , go to s. .
 
-WP: The Riverways, go to The Southern Forest (get WP), go to The Cavern of Anger, go to The Beacon (get WP), Light up The Beacon, Sail to The Brine King's Reef.
+WP: , go to , go to , go to , , .
 
-WP: The Brine King's Reef (get WP), go to The Brine King's Throne, kill The Brine King, take the boat to Act 7.
+WP: , go to , take the boat to Act 7.
