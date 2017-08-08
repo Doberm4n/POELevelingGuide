@@ -1,4 +1,4 @@
-Twilight Strand (Kill Hillock)
+Twilight Strand (Kill Hillock);
 Town
 The Coast (get wp)
 The Mud Flats (complete "Breaking Some Eggs")
