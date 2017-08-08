@@ -13,7 +13,7 @@ The Ruined Square (get wp, kill Utala)
 The Reliquary (get wp, find three Kitava's Torments)
 Town (complete "Death to Purity" and "The King's Feast")
 Town (complete "Kitava's Torments") (+1 SP, +2 RP)
-
-
-
-WP: The Ruined Square, go to The Ossuary. Find Sign of Purity, go back to The Ruined Square, go to The Cathedral Rooftop (get WP), go to Cathedral Apex (don't forget to use Teleport outside if you die), fight Kitava, take the boat to Part 2/Act 6.
+The Ossuary
+The Ruined Square
+The Cathedral Rooftop (get wp)
+Cathedral Apex (fight Kitava)
