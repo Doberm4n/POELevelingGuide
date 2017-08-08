@@ -1,7 +1,7 @@
 Twilight Strand (Kill Hillock)
 Town
 The Coast (get wp)
-The Mud Flats (complete "Breaking Some Eggs") 
+The Mud Flats (complete "Breaking Some Eggs")
 The Fetid Pool (complete "A Dirty Job") (+2 RP)
 The Submerged Passage (get wp)
 The Flooded Depths (complete "The Dweller of the Deep") (+1 SP)
