@@ -19,3 +19,4 @@ Town (receive support gem and prepare for Merviel)
 The Cavern of Wrath
 The Cavern of Anger (kill Merviel)
 The Southern Forest
+1
