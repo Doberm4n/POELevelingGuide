@@ -1,0 +1,11 @@
+WT+RI: The Ancest, take teleport to Oriath. The Slave Pens (get WP), kill Overseer Crow, go to Overseer's Tower. Complete "Return to Oriath" (Lani).
+
+QF: Go to The Control Blocks, find Experimental Supplies (Miasmeter), kill Justicar Casticus & get Eye of Zeal. Go to Oriath Square (get WP). Complete "The Key to Freedom" (Lani).
+
+WP+EX(UJ): Oriath Square, go to Templar Courts Entrance (get WP), go to The Chamber of Innocence (get WP), complete "Death to Purity" (Lani).
+
+SP: The Chamber of Innocence, kill High Templar Avarius. Complete "In Service to Science" (Vilenta).
+
+WP+SP+RP+EX(UJ): The Chamber of Innocence, go to The Torched Courts, go to The Ruined Square (get WP), find Utala and kill him (EX: UJ). Go to The Reliquary (get WP), find Kitava's Torments. Complete "The King's Feast" (Bannon) & "Kitava's Torments" (Lani).
+
+WP: The Ruined Square, go to The Ossuary. Find Sign of Purity, go back to The Ruined Square, go to The Cathedral Rooftop (get WP), go to Cathedral Apex (don't forget to use Teleport outside if you die), fight Kitava, take the boat to Part 2/Act 6.
