@@ -1,13 +1,33 @@
 Twilight Strand (clear area)
 Town (Complete "Fallen from Grace" ) (+2 RP)
+The Coast (get WP)
+?The Tidal Island, get Bestel's Manuscript
+?Complete "Bestel's Epic" (Bestel)
+The Coast
+The Mud Flats, find Nessa, get Eye of Conquest
+The Karui Fortress
+Tukohama's Keep kill Tukohama
+The Ridge (get WP)
+The Lower Prison (get WP, complete trial)
+Shavronne's Tower
+Prison Rooftop, kill Shavronne
 
-WP+E(RI): The Coast (get WP), go to The Tidal Island, get Bestel's Manuscript. Complete "Bestel's Epic" (Bestel).
 
-WP+SP: The Coast, go to The Mud Flats, find Nessa, enter The Karui Fortress. Enter Tukohama's Keep, kill Tukohama, go to The Ridge (get WP). Complete "The Father of War" (Tarkleigh).
 
-WP+E(RI+LB): The Ridge, go to The Lower Prison (get WP, E: LB), go to Shavronne's Tower, go to Prison Rooftop, kill Shavronne. Complete "Essence of Umbra" (Tarkleigh).
+The Prisoner's Gate (wp)
+Valley of the Fire Drinker & start fight with Abberath
+The Gloven Pass
+Valley of the Fire Drinker & kill Abberath
 
-WT+SP: The Prisoner's Gate, go to Valley of the Fire Drinker & start fight with Abberath, go to The Gloven Pass, go to Valley of the Fire Drinker & kill Abberath. Complete "The Cloven One" (Bestel).
+Town (Complete "The Father of War" ) (+1 SP)
+Complete "Essence of Umbra" 
+Complete "The Cloven One" (Bestel).
+
+WP+SP: , go to , , enter . Enter , , go to . (Tarkleigh).
+
+WP+E(RI+LB): The Ridge, go to , E: LB, go to , go to . (Tarkleigh).
+
+WT+SP: , go to , go to , go to . 
 
 WP+SP: The Prisoner's Gate, go to The Western Forest (get WP), go to The Riverways (get WP, find a break in the road, that will lead you to next area), go to The Wetlands, go to The Spawning Grounds, defeat The Puppet Mistress. Complete "The Puppet Mistress" (Tarkleigh).
 
