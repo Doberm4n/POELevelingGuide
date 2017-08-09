@@ -2,7 +2,7 @@
 
 - [Act 1](Act_1.txt)
 
-**Notes**
+**Notes:**
 
 Also used info from:
 - https://pathofexile.gamepedia.com
