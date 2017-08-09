@@ -1,23 +1,38 @@
-The Broken Bridge find Weylam's Silver Locket
-The Crossroads (get WP)
-The Fellshrine Ruins (west, good farming spot) find Maligaro's Map
-Town Complete "The Silver Locket"
-The Crypt
+The Broken Bridge ?find Weylam's Silver Locket
+The Crossroads (get WP, go east from WP)
+The Fellshrine Ruins (, good farming spot)
+The Crypt get WP TRIAL find Maligaro's Map
+The Crossroads (go west from WP)
+The Chamber of Sins Lvl 1 (get WP)
+Maligaro's Map (kill Maligaro)
+The Chamber of Sins Lvl 1 (get Obsidian key from Silk)
+The Chamber of Sins lvl 2 (TRIAL)
 
-The Crossroads
-The Chamber of Sins (east, get WP)
-Maligaro's Map & kill Maligaro
+The Den (get WP)
+The Ashen Fields (get WP)
+The Forest Encampment, kill Greust
+The Northern Forest (get WP)
+
+Town ?Complete "The Silver Locket"
 Town Complete "Essence of the Artist"
+Town Complete "The Master of a Million Faces" (+1 SP)
 
+The Northern Forest find the Azmeri Shrine
+The Dread Thicket find all Fireflies kill Gruthkul
 
-WP+MP+E(UF+LB): Go to ,  (E: UF), go to , go to , go to  (get WP, E: LB), . (Weylam).
+Town Complete "Queen of Despair" (+1 SP)
+Town complete "In Memory of Greust"
 
-WP+RI: , go to , enter .  (Helena).
+The Northern Forest
+The Causeway (get WP) find Kishara's Star
+The Vaal City (get WP)
 
-WP+SP+E(LB): The Chamber of Sins, go to The Chamber of Sins lvl 2 (E: LB), go to The Den (get WP), go to The Ashen Fields (get WP), go to The Forest Encampment, kill Greust, go to The Northern Forest (get WP). Complete "The Master of a Million Faces" (Eramir).
+Town Complete "Kishara's Star"
 
-SP+E(RI): The Northern Forest, find the Azmeri Shrine (E: RI), go to The Dread Thicket, find all Fireflies, kill Gruthkul. Complete "Queen of Despair" (Eramir) & "In Memory of Greust" (Helena).
+The Temple of Decay
+The Tempel of Decay lvl 2
+Arakaali's Web kill Arakaali
+The Sarn Ramparts
+The Sarn Encampment
 
-WP+SP+RP: Talk to Helena, The Northern Forest, go to The Causeway (get WP), find Kishara's Star, go to The Vaal City (get WP). Complete "Kishara's Star" (Weylam).
-
-WT: The Vaal City, enter The Temple of Decay, go to The Tempel of Decay lvl 2 (place TP in case you die), go to Arakaali's Web, kill Arakaali. Go to The Sarn Ramparts, go to The Sarn Encampment (Act 8).
+WT: The Vaal City, enter , go to  (place TP in case you die), go to , . Go to , go to  (Act 8).
