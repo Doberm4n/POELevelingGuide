@@ -1,6 +1,18 @@
-WP+MP+E(UF+LB): Go to The Broken Bridge, find Weylam's Silver Locket (E: UF), go to The Crossroads (get WP), go to The Fellshrine Ruins (west, good farming spot), go to The Crypt (get WP, E: LB), find Maligaro's Map. Complete "The Silver Locket" (Weylam).
+The Broken Bridge find Weylam's Silver Locket
+The Crossroads (get WP)
+The Fellshrine Ruins (west, good farming spot) find Maligaro's Map
+Town Complete "The Silver Locket"
+The Crypt
 
-WP+RI: The Crossroads, go to The Chamber of Sins (east, get WP), enter Maligaro's Map & kill Maligaro. Complete "Essence of the Artist" (Helena).
+The Crossroads
+The Chamber of Sins (east, get WP)
+Maligaro's Map & kill Maligaro
+Town Complete "Essence of the Artist"
+
+
+WP+MP+E(UF+LB): Go to ,  (E: UF), go to , go to , go to  (get WP, E: LB), . (Weylam).
+
+WP+RI: , go to , enter .  (Helena).
 
 WP+SP+E(LB): The Chamber of Sins, go to The Chamber of Sins lvl 2 (E: LB), go to The Den (get WP), go to The Ashen Fields (get WP), go to The Forest Encampment, kill Greust, go to The Northern Forest (get WP). Complete "The Master of a Million Faces" (Eramir).
 
