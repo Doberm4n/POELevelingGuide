@@ -1,7 +1,7 @@
 *.pyc
 *.zip
 build/
-dist/
+dist*
 release/
 *.spec
 *.7z
