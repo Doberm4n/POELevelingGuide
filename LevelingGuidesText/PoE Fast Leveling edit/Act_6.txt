@@ -22,23 +22,9 @@ The Riverways (get WP, find a break in the road, that will lead you to next area
 The Wetlands
 The Spawning Grounds, defeat The Puppet Mistres
 Town Complete "The Puppet Mistress" (Tarkleigh) (+1 SP)
-
 The Riverways
 The Southern Forest (get WP)
-The Cavern of Anger
-The Beacon (get WP) Light up The Beacon Sail to The Brine King's Reef
+The Cavern of Anger (get Black Flag)
+The Beacon (get WP),refuel and light the beacon, Sail to The Brine King's Reef
 The Brine King's Reef (get WP)
 The Brine King's Throne, kill The Brine King
-
-
-WP+SP: , go to , , enter . Enter , , go to . (Tarkleigh).
-
-WP+E(RI+LB): The Ridge, go to , E: LB, go to , go to . (Tarkleigh).
-
-WT+SP: , go to , go to , go to . 
-
-WP+SP: , go to , go to , go to , go to s. .
-
-WP: , go to , go to , go to , , .
-
-WP: , go to , take the boat to Act 7.
