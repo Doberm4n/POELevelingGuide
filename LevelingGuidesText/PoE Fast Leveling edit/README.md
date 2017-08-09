@@ -4,7 +4,7 @@
 
 **Notes**
 
-Used info from:
+Also used info from:
 - https://pathofexile.gamepedia.com
 - https://www.pathofexile.com/forum/view-thread/1727591/page/1#p13657998
 - https://www.pathofexile.com/forum/view-thread/1931093/page/1#p14658708
