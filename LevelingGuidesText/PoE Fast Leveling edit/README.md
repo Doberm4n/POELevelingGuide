@@ -1,4 +1,5 @@
 Guide text
 
 >! This is a spoiler
-- [Act 1](https://github.com/Doberm4n/POELevelingGuide/blob/master/LevelingGuidesText/PoE%20Fast%20Leveling%20edit/Act_1.txt)
+! d ssvsv
+- [Act 1](Act_1.txt)
