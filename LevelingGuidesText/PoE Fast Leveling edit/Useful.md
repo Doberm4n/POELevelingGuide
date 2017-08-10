@@ -7,12 +7,12 @@
 - Penalties:
 
   ```
-  Completion of Act 5: -30% to all resistances
-  Completion of Act 10: -30% to all resistances (-60% total)
+  Act 5 complete: -30% to all resistances
+  Act 10 complete: -60% to all resistances
   ```
 **XP**
 - Penalties:
 
   ```
-  10% loss in any area from the map device, level 7, 8 Forsaken Master areas, endgame labyrinth
+  10% loss area from the map device, level 7, 8 Forsaken Master areas, endgame labyrinth
   ```  
