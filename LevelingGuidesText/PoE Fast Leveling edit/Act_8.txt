@@ -32,19 +32,20 @@ WP+SP+E(UJ+LB): , go to , go to , E: LB),  (E: UJ) & , go to , go to .  (Hargan)
 
 The Grain Gate kill Gemling Legionnaires
 The Imperial Fields (get WP)
-The Solaris Temple (get WP)
+The Solaris Temple lvl 1 (get WP)
 The Solaris Temple lvl 2 kill Dawn, take Sun Orb
 
-Town Complete "The Gemling Legion" (Maramoa)
+Town Complete "The Gemling Legion" (+1 SP)
+
 
 The Bath House
 The Lunaris Concourse (get WP)
 The Lunaris Temple (get WP)
 The Lunaris Temple lvl 2, kill Dusk, take Moon Orb
 
-WP+SP: , , go to , go to , go to , . .
+The Solaris Concourse
+The Harbour Bridge (east)
+The Sky Shrine, kill Solaris & Lunar
 
-WP: , go to , go to , go to .
 
-WP: The Solaris Concourse, go to The Harbour Bridge (east), go to The Sky Shrine, kill Solaris & Lunar, go to The Blood Aqueduct.
 
