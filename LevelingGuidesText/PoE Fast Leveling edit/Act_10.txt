@@ -1,0 +1,28 @@
+The Cathedral Rooftop kill Kitava's Cultists
+The Ravaged Square
+The Reliquary (south, get WP) find The Teardrop
+Town Complete "Safe Passage"
+Town Complete "Map to Tsoatha" (+1 SP)
+The Reliquary
+The Ravaged Square (get WP)
+The Ossuary
+The Bone Pits, find The Elixir of Allure
+Town Complete "No Love for Old Ghosts"
+
+The Ravaged Square
+The Torched Courts
+The Desecrated Chambers (get WP)
+The Sanctum of Innocence, kill Avarius, take The Staff of Purity
+Town Complete "Death and Rebirth"
+
+The Ravaged Square, talk to Innocence
+The Feeding Trough, kill Kitava
+Town Complete "An End to Hunger" (+2 SP)
+
+WP+UF+SP: Oriath Docks, go to , , go to , go to , .  (Lani) &  (Lilly).
+
+WP+RP+E(LB): , go back to , go to  (E: LB), go to .  (Weylam).
+
+WP+RI: , go to , go to , go to .  (Bannon).
+
+SP+WT: , go to .  (Lani).
