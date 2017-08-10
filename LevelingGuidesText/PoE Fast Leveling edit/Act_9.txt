@@ -2,25 +2,26 @@ The Blood Aqueduct (get WP)
 Town
 The Descent
 Supply Hoist
-another Supply Hoist
+Supply Hoist
 The Vastiri Desert (get WP) find Storm-Weathered Chest, kill Mumies, take Storm Blade
 Town Complete "The Storm Blade" (+1 SP)
+
 The Vastiri Desert
 The Foothills (get WP), kill Boulderback, take the Calendar of Fortune
 The Boiling Lake, find Basilisk Acid
-Town Complete "Fastis Fortuna"
+Town Complete "Fastis Fortuna" (+2 RP)
 The Foothills
 The Tunnel (get WP) [TRIAL] [WAYPOINT]
-The Quarry (get WP) kill Kira/Gurakhan, take The Sekhema Feather
+The Quarry (get WP) Arena: kill Kira/Gurakhan, take The Sekhema Feather
 The Refinery, find Trarthan Powder
 Town Complete "The Ruler of Highgate" (+1 SP)
-Town Complete "Reccuring Nightmare"
+Town progress "Reccuring Nightmare"
 
 The Quarry
 The Belly of The Beast
 The Rotting Core
 The Black Heart kill the spirits of Shavronne, Maligaro & Doedre
 The Black Heart kill The Depraved Trinity
-Sail back to Oriath
+Sail to Oriath
 
 
