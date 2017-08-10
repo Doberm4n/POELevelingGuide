@@ -1,13 +1,12 @@
 The Cathedral Rooftop kill Kitava's Cultists
-The Ravaged Square
+The Ravaged Square (get WP)
 The Reliquary (south, get WP) find The Teardrop
 Town Complete "Safe Passage"
 Town Complete "Map to Tsoatha" (+1 SP)
-The Reliquary
-The Ravaged Square (get WP)
+The Ravaged Square
 The Ossuary
-The Bone Pits, find The Elixir of Allure
-Town Complete "No Love for Old Ghosts"
+The Bone Pits, TRIAL find The Elixir of Allure
+Town Complete "No Love for Old Ghosts" (+2 RP)
 
 The Ravaged Square
 The Torched Courts
