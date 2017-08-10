@@ -12,5 +12,5 @@
 ## XP
 - Penalties:
   ```
-  10% loss in any area reached from the map device, level 7 and 8 Forsaken Master mission areas and endgame labyrinth
+  10% loss in any area from the map device, level 7, 8 Forsaken Master areas, endgame labyrinth
   ```  
