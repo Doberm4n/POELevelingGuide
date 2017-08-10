@@ -22,16 +22,29 @@ The Bath House (get WP) TRIAL kill Hector Titucius take Wings of Vastiri
 The High Gardens
 The Pools of Terror, kill Yugul
 
-Town Complete "Reflection of Terror"
+Town Complete "Reflection of Terror" (+1 SP)
 Town complete "The Wings of Vastiri"
 
 WP+SP+RP: , go to , , go to , , go to .  (Clarissa).
 
 WP+SP+E(UJ+LB): , go to , go to , E: LB),  (E: UJ) & , go to , go to .  (Hargan) & E:  (Hargan).
 
-WP+SP: The Grain Gate, kill Gemling Legionnaires, go to The Imperial Fields (get WP), go to The Solaris Temple (get WP), go to The Solaris Temple lvl 2, kill Dawn, take Sun Orb. Complete "The Gemling Legion" (Maramoa).
 
-WP: The Bath House, go to The Lunaris Concourse (get WP), go to The Lunaris Temple (get WP), go to The Lunaris Temple lvl 2, kill Dusk, take Moon Orb.
+The Grain Gate kill Gemling Legionnaires
+The Imperial Fields (get WP)
+The Solaris Temple (get WP)
+The Solaris Temple lvl 2 kill Dawn, take Sun Orb
+
+Town Complete "The Gemling Legion" (Maramoa)
+
+The Bath House
+The Lunaris Concourse (get WP)
+The Lunaris Temple (get WP)
+The Lunaris Temple lvl 2, kill Dusk, take Moon Orb
+
+WP+SP: , , go to , go to , go to , . .
+
+WP: , go to , go to , go to .
 
 WP: The Solaris Concourse, go to The Harbour Bridge (east), go to The Sky Shrine, kill Solaris & Lunar, go to The Blood Aqueduct.
 
