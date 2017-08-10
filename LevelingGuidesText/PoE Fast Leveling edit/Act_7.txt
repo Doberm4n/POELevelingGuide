@@ -27,12 +27,11 @@ The Northern Forest
 The Causeway (get WP) find Kishara's Star
 The Vaal City (get WP)
 
-Town Complete "Kishara's Star"
+Town Complete "Kishara's Star" (+1 SP, +2 RP)
 
-The Temple of Decay
+The Temple of Decay lvl 1
 The Tempel of Decay lvl 2
 Arakaali's Web kill Arakaali
-The Sarn Ramparts
-The Sarn Encampment
+
 
 WT: The Vaal City, enter , go to  (place TP in case you die), go to , . Go to , go to  (Act 8).
