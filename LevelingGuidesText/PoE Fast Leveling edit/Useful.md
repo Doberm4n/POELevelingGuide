@@ -1,6 +1,5 @@
 ## Resistances
 - Base resistances cap: 
-
   ```
   75%
   ```
@@ -10,7 +9,7 @@
   Completion of Act 10: -30% to all resistances (-60% total)
   ```
 ## XP
-- Penalties:
+- Penalties:  
   ```
   10% loss in any area from the map device, level 7, 8 Forsaken Master areas, endgame labyrinth
   ```  
