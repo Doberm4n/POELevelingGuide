@@ -10,8 +10,8 @@ The Flooded Depths (complete "The Dweller of the Deep") (+1 SKILL POINT)
 The Ledge <WAYPOINT>  
 The Climb <WAYPOINT>  
 The Lower Prison:
-◦ <WAYPOINT>  
-◦ <TRIAL OF ASCENDANCY>  
+◦ \<WAYPOINT>  
+◦ \<TRIAL OF ASCENDANCY>  
 The Upper Prison (defeat Brutus)  
 Prisoner's gate <WAYPOINT>  
 The Ship Graveyard <WAYPOINT>  
