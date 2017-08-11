@@ -70,7 +70,7 @@ def getJsonFileName():
     return newName
 
 def browseFiles():
-    file = QtGui.QFileDialog.getOpenFileNames(None, "Select the file to add", directory=os.getcwd(), filter='*.txt')
+    file = QtGui.QFileDialog.getOpenFileNames(None, "Select the file to add", directory=os.getcwd(), filter='*.txt; *.md')
     fileNames = list(file)
     return fileNames
 
