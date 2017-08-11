@@ -1,21 +1,22 @@
-Twilight Strand (Kill Hillock)
+Twilight Strand (defeat Hillock)  
 Town
-The Coast (get wp)
-The Mud Flats (complete "Breaking Some Eggs") 
-The Fetid Pool (complete "A Dirty Job") (+2 RP)
-The Submerged Passage (get wp)
-The Flooded Depths (complete "The Dweller of the Deep") (+1 SP)
-The Ledge (get wp)
-The Climb (get wp)
-The Lower Prison (get wp, complete trial)
-The Upper Prison (kill Brutus)
-Prisoner's gate (get wp)
-The Ship Graveyard (get wp)
-The Ship Graveyard Cave (get Allflame)
-The Ship Graveyard (kill Fairgraves)
+The Coast <WAYPOINT>  
+The Mud Flats (complete "Breaking Some Eggs")  
+The Fetid Pool:
+◦ (complete "A Dirty Job") 
+◦ (+2 RESREC POINTS)  
+The Submerged Passage <WAYPOINT>  
+The Flooded Depths (complete "The Dweller of the Deep") (+1 SKILL POINT)  
+The Ledge <WAYPOINT>  
+The Climb <WAYPOINT>  
+The Lower Prison:
+◦ <WAYPOINT>  
+◦ <TRIAL OF ASCENDANCY>
+The Upper Prison (defeat Brutus)
+Prisoner's gate <WAYPOINT>
+The Ship Graveyard <WAYPOINT>
+The Ship Graveyard Cave (obtain Allflame)
+The Ship Graveyard (defeat Fairgraves)
 Town (complete "The Marooned Mariner") (+1 SP)
-The Cavern of Wrath (get wp)
-Town (receive support gem and prepare for Merviel)
-The Cavern of Wrath
-The Cavern of Anger (kill Merviel)
-The Southern Forest
+The Cavern of Wrath <WAYPOINT>
+The Cavern of Anger (defeat Merviel)
