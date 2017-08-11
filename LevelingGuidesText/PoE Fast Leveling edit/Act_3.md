@@ -26,16 +26,16 @@ The Docks:
 ◦ (WAYPOINT)  
 ◦ (talk to Fairgraves)  
 ◦ (find Thaumetic Sulphate)  
-The Solaris Temple lvl 1 (WAYPOINT)  
-The Solaris Temple lvl 2:  
+The Solaris Temple Level 1 (WAYPOINT)  
+The Solaris Temple Level 2:  
 ◦ (WAYPOINT)  
 ◦ (talk to Lady Dialla)  
 The Sewers (use Infernal Talc on Undying Passage)  
 Ebony Barracks:  
 ◦ (WAYPOINT)  
 ◦ (defeat General Gravius)  
-Lunaris Temple lvl 1 (WAYPOINT)  
-Lunaris Temple lvl 2:  
+Lunaris Temple Level 1 (WAYPOINT)  
+Lunaris Temple Level 2:  
 ◦ (defeat Piety)  
 ◦ (obtain Tower Key)  
 Town:  
@@ -51,4 +51,6 @@ The Docks (complete "A Swig of Hope")
 Town  
 The Imperial Gardens  
 The Lower Sceptre of God (WAYPOINT)  
-The Upper Sceptre of God (defeat Dominus)
+The Upper Sceptre of God (defeat Dominus)  
+
+**TOTAL IN ACT 1:** +2 SKILL POINTS, +2 RESPEC POINTS, 1 TRIAL OF ASCENDANCY
