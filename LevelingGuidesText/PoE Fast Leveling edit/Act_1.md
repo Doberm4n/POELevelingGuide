@@ -1,26 +1,26 @@
-Twilight Strand (defeat Hillock)  
-Town  
-The Coast **(WAYPOINT)**  
-The Mud Flats (complete "Breaking Some Eggs")  
-The Fetid Pool:  
+1. Twilight Strand (defeat Hillock)  
+2. Town  
+3. The Coast (WAYPOINT)  
+4. The Mud Flats (complete "Breaking Some Eggs")  
+5. The Fetid Pool:  
 ◦ (complete "A Dirty Job")  
 ◦ (+2 RESREC POINTS)  
-The Submerged Passage (WAYPOINT)  
-The Flooded Depths:  
+6. The Submerged Passage (WAYPOINT)  
+7. The Flooded Depths:  
 ◦ (complete "The Dweller of the Deep")  
 ◦ (+1 SKILL POINT)  
-The Ledge (WAYPOINT)  
-The Climb (WAYPOINT)  
-The Lower Prison:  
+8. The Ledge (WAYPOINT)  
+9. The Climb (WAYPOINT)  
+10. The Lower Prison:  
 ◦ (WAYPOINT)  
 ◦ (TRIAL OF ASCENDANCY)  
-The Upper Prison (defeat Brutus)  
-Prisoner's gate (WAYPOINT)  
-The Ship Graveyard (WAYPOINT)  
-The Ship Graveyard Cave (obtain Allflame)  
-The Ship Graveyard (defeat Fairgraves)  
-Town:  
+11. The Upper Prison (defeat Brutus)  
+12. Prisoner's gate (WAYPOINT)  
+13. The Ship Graveyard (WAYPOINT)  
+14. The Ship Graveyard Cave (obtain Allflame)  
+15. The Ship Graveyard (defeat Fairgraves)  
+16. Town:  
 ◦ (complete "The Marooned Mariner")  
 ◦ (+1 SKILL POINT)  
-The Cavern of Wrath (WAYPOINT)  
-The Cavern of Anger (defeat Merviel)
+17. The Cavern of Wrath (WAYPOINT)  
+18. The Cavern of Anger (defeat Merviel)
