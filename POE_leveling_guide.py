@@ -14,6 +14,8 @@ from json import loads
 import json
 import gc
 import time
+import datetime
+import urllib2
 import res.res
 #import modules.DPSCalc as DPSCalcModule
 import generated.form_main as GUIMain
@@ -31,6 +33,7 @@ form = None
 formAbout = None
 version = '0.9.1'
 link = '<a href="https://github.com/Doberm4n/POELevelingGuide">GitHub</a>'
+guideGitHubUrl = 'https://github.com/Doberm4n/POELevelingGuide/releases/download/guide_2.3/PoE.Fast.Leveling.Merciless.json'
 
 
 try:
@@ -60,6 +63,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         self.menuActionOpen.triggered.connect(self.browseGuide)
         self.actionAbout.triggered.connect(self.showAbout)
         self.actionCreate_empty_guide_file.triggered.connect(lambda: export.createGuideAndImportText(self))
+        self.actionDownload_guide_from_GitHub.triggered.connect(self.downloadAndOpenGuideFromGithub)
 
         self.loadConfig()
 
@@ -357,6 +361,66 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
         formAbout = aboutDialog()
         formAbout.show()
 
+    def downloadAndOpenGuideFromGithub(self):
+        try:
+            #self.downloading_thread = downloadingThread(url, filename)
+            #self.downloading_thread.start()
+            ##self.downloading_thread.downloadURL()
+            # self.url = url
+            # self.filename = filename
+            #global form
+            url = guideGitHubUrl
+            #now = str(datetime.datetime.now()).replace(":", "_")
+            now = datetime.datetime.now().strftime("%d-%m-%Y_%H_%M_%S")
+            filename =  'Guides\guide_' + now + '.json'
+
+
+            opener = urllib2.build_opener()
+            #opener.addheaders = [('User-Agent', form.GetUserAgent())]
+            remote_file = opener.open(url)
+            #temp_filename = self.curDir + "\\" + "testfile"
+
+            #testtest = remote_file.read()
+            #print testtest
+
+            f = open(filename, 'wb')
+            try:
+                total_size = remote_file.info().getheader('Content-Length').strip()
+                header = True
+            except AttributeError:
+                header = False # a response doesn't always include the "Content-Length" header
+                #form.setEnabled(True)
+                #self.enableButtons()
+
+            if header:
+                total_size = int(total_size)
+
+            bytes_so_far = 0
+
+            while True:
+                buffer = remote_file.read(8192)
+                if not buffer:
+                    #sys.stdout.write('\n')
+                    break
+
+                bytes_so_far += len(buffer)
+                f.write(buffer)
+            if self.dialogYesNo('Open downloaded guide', 'Open downloaded guide?'):
+                self.loadGuide(filename)
+                # if not header:
+                #     total_size = bytes_so_far # unknown size
+
+                # percent = float(bytes_so_far) / total_size
+                # percent = round(percent*100, 2)
+                # sys.stdout.write("Downloaded %d of %d bytes (%0.2f%%)\r" % (bytes_so_far, total_size, percent))
+                #form.progressBar.setValue(percent)
+                # form.statusbar.showMessage("Downloading " + filename + " " + str(percent) + "%")
+                # if percent == 100.00:
+                #     form.statusbar.showMessage("Download " + filename + " complete")
+            #self.enableButtons()
+        except Exception, e:
+            self.tabWidget.hide()
+            self.statusbar.showMessage("Error in downloading guide from GitHub: " + str(e))
 
 class aboutDialog(QtGui.QDialog, GUIAbout.Ui_Dialog):
     def __init__(self):

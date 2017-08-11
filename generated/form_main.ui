@@ -94,6 +94,7 @@
      <string>Tools</string>
     </property>
     <addaction name="actionCreate_empty_guide_file"/>
+    <addaction name="actionDownload_guide_from_GitHub"/>
    </widget>
    <addaction name="menuGuide"/>
    <addaction name="menuTools"/>
@@ -178,6 +179,11 @@
   <action name="actionComplete_All">
    <property name="text">
     <string>Complete all</string>
+   </property>
+  </action>
+  <action name="actionDownload_guide_from_GitHub">
+   <property name="text">
+    <string>Download guide from GitHub</string>
    </property>
   </action>
  </widget>

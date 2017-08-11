@@ -96,6 +96,8 @@ class Ui_MainWindow(object):
         self.actionImport_text_to_guide.setObjectName(_fromUtf8("actionImport_text_to_guide"))
         self.actionComplete_All = QtGui.QAction(MainWindow)
         self.actionComplete_All.setObjectName(_fromUtf8("actionComplete_All"))
+        self.actionDownload_guide_from_GitHub = QtGui.QAction(MainWindow)
+        self.actionDownload_guide_from_GitHub.setObjectName(_fromUtf8("actionDownload_guide_from_GitHub"))
         self.menuReset_progress.addAction(self.actionReset_All)
         self.menuComplete_progress.addAction(self.actionComplete_All)
         self.menuGuide.addAction(self.menuActionOpen)
@@ -103,6 +105,7 @@ class Ui_MainWindow(object):
         self.menuGuide.addAction(self.menuComplete_progress.menuAction())
         self.menuHelp.addAction(self.actionAbout)
         self.menuTools.addAction(self.actionCreate_empty_guide_file)
+        self.menuTools.addAction(self.actionDownload_guide_from_GitHub)
         self.menubar.addAction(self.menuGuide.menuAction())
         self.menubar.addAction(self.menuTools.menuAction())
         self.menubar.addAction(self.menuHelp.menuAction())
@@ -136,4 +139,5 @@ class Ui_MainWindow(object):
         self.actionCreate_empty_guide_file.setText(_translate("MainWindow", "Create guide file", None))
         self.actionImport_text_to_guide.setText(_translate("MainWindow", "Import text to guide", None))
         self.actionComplete_All.setText(_translate("MainWindow", "Complete all", None))
+        self.actionDownload_guide_from_GitHub.setText(_translate("MainWindow", "Download guide from GitHub", None))
 

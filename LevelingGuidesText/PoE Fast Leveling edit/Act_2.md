@@ -5,7 +5,7 @@ Western Forest (get wp, kill/help Alira, you can find her by finding a break in 
 Weaver’s Chambers (to find it, look for trees with spiderweb)
 Weavers Nest (complete "Sharp and Cruel")
 Town
-Travel to Lioneye's (complete "The Way Forward" ) (+1 SP)
+Lioneye's Watch (Act 1) (complete "The Way Forward") (+1 SP)
 Town
 The Old Fields
 The Crossroads (get wp, follow the road)
