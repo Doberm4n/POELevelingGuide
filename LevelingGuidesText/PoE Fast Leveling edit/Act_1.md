@@ -2,8 +2,8 @@ Twilight Strand (defeat Hillock)
 Town  
 The Coast (WAYPOINT)  
 The Mud Flats (complete "Breaking Some Eggs")  
-The Fetid Pool:
-◦ (complete "A Dirty Job") 
+The Fetid Pool:  
+◦ (complete "A Dirty Job")  
 ◦ (+2 RESREC POINTS)  
 The Submerged Passage (WAYPOINT)  
 The Flooded Depths (complete "The Dweller of the Deep") (+1 SKILL POINT)  
