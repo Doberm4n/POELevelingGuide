@@ -33,7 +33,7 @@ form = None
 formAbout = None
 version = '0.9.1'
 link = '<a href="https://github.com/Doberm4n/POELevelingGuide">GitHub</a>'
-guideGitHubUrl = 'https://github.com/Doberm4n/POELevelingGuide/releases/download/guide_2.3/PoE.Fast.Leveling.Merciless.json'
+guideGitHubUrl = 'https://github.com/Doberm4n/POELevelingGuide/releases/download/guideAndApp/LevelingGuideForPoE.json'
 
 
 try:
@@ -150,7 +150,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 with open(json_file) as data_file:
                     return load(data_file)
             except Exception, e:
-                 print "Error: " + str(e)
+                print "Error: " + str(e)
 
     def writeJson(self, dump, json_file):
         if json_file:
@@ -179,8 +179,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
              print "Error in loading config: " + str(e)
 
     def browseGuide(self):
-        self.curGuide = str(QtGui.QFileDialog.getOpenFileName(self, "Select guide", filter='*.json', directory=self.curDir))
-        if self.curGuide:
+        curGuide = str(QtGui.QFileDialog.getOpenFileName(self, "Select guide", filter='*.json', directory=self.curDir))
+        #print self.curGuide
+        if curGuide:
+            self.curGuide = curGuide
             guideJson = self.readJson('Configs\config.json')
             guideJson['curGuide'] = self.curGuide
             self.writeJson(guideJson, 'Configs\config.json')
@@ -369,11 +371,12 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             # self.url = url
             # self.filename = filename
             #global form
+            self.statusbar.showMessage('Downloading leveling guide json...')
             url = guideGitHubUrl
             #now = str(datetime.datetime.now()).replace(":", "_")
             now = datetime.datetime.now().strftime("%d-%m-%Y_%H_%M_%S")
-            filename =  'Guides\guide_' + now + '.json'
-
+            filename =  os.getcwd() + '\\Guides\\guide_' + now + '.json'
+            #print filename
 
             opener = urllib2.build_opener()
             #opener.addheaders = [('User-Agent', form.GetUserAgent())]
@@ -384,18 +387,18 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
             #print testtest
 
             f = open(filename, 'wb')
-            try:
-                total_size = remote_file.info().getheader('Content-Length').strip()
-                header = True
-            except AttributeError:
-                header = False # a response doesn't always include the "Content-Length" header
+            # try:
+            #     total_size = remote_file.info().getheader('Content-Length').strip()
+            #     header = True
+            # except AttributeError:
+            #     header = False # a response doesn't always include the "Content-Length" header
                 #form.setEnabled(True)
                 #self.enableButtons()
 
-            if header:
-                total_size = int(total_size)
+            # if header:
+            #     total_size = int(total_size)
 
-            bytes_so_far = 0
+            # bytes_so_far = 0
 
             while True:
                 buffer = remote_file.read(8192)
@@ -403,9 +406,16 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                     #sys.stdout.write('\n')
                     break
 
-                bytes_so_far += len(buffer)
+                #bytes_so_far += len(buffer)
                 f.write(buffer)
+            f.close()
+            self.statusbar.showMessage('Download complete. (' + filename + ')')
             if self.dialogYesNo('Open downloaded guide', 'Open downloaded guide?'):
+                self.curGuide = filename
+                guideJson = self.readJson('Configs\config.json')
+                guideJson['curGuide'] = self.curGuide
+                self.writeJson(guideJson, 'Configs\config.json')
+                self.guideLineEdit.setText(os.path.basename(self.curGuide))
                 self.loadGuide(filename)
                 # if not header:
                 #     total_size = bytes_so_far # unknown size
