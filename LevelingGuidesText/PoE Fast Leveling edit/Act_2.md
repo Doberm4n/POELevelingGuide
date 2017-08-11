@@ -1,31 +1,72 @@
 ﻿The Southern Forest
-The Forest Encampment
-The Riverways (follow the road, get wp, keep following the road, get to Western Forest)
-Western Forest (get wp, kill/help Alira, you can find her by finding a break in the road, go south & kill the Blackguards & open the blocked pass)
-Weaver’s Chambers (to find it, look for trees with spiderweb)
-Weavers Nest (complete "Sharp and Cruel")
 Town
-Lioneye's Watch (Act 1) (complete "The Way Forward") (+1 SP)
+
+The Riverways 
+(WAYPOINT)
+(follow the road)
+
+
+Western Forest (WAYPOINT)
+find a break in the road and go there
+kill/help Alira
+follow the road
+defeat the Blackguards
+open the blocked pass
+find trees with spiderweb and go there
+Weaver’s Chambers
+Weavers Nest (complete "Sharp and Cruel")
+
+Lioneye's Watch (Act 1) 
+(complete "The Way Forward") 
+(+1 SP)
+
 Town
 The Old Fields
-The Crossroads (get wp, follow the road)
-The Broken Bridge (get wp, kill/help Kraityn) (follow the road, it will lead you to Kraityn)
-Town
+
 The Crossroads
-The Fellshrine Ruins (right, good farming spot)
-The Crypt Level 1 (get wp, complete trial)
-The Crypt Level 2 (get golden hand for "Through Sacred Ground") (+2 RP)
+(WAYPOINT), 
+follow the road
+
+The Broken Bridge 
+(WAYPOINT)
+follow the road
+kill/help Kraityn
+
 Town
+The Crossroads (right from waypoint)
+The Fellshrine Ruins 
+
+The Crypt Level 1 
+(WAYPOINT), 
+TRIAL
+
+The Crypt Level 2 (obtain golden hand) 
+
+Town
+complete "Through Sacred Ground") 
+(+2 RP)
+
 The Crossroads
-The Chamber of Sins (left, get wp)
-The Chambers of Sins lvl 2 (complete trial & "Intruders in Black")
+The Chamber of Sins (left, (WAYPOINT))
+
+The Chambers of Sins lvl 2 
+(TRIAL 
+complete "Intruders in Black")
+
 Town
-The Riverways (follow the main road until you see a break, that path will lead you to the next area)
-The Wetlands (kill/help Oak & get the apex, get wp, poison the tree & complete "The Root of the Prolem")
-The Vaal Ruins
-The Northern Forest (get wp, important!, run along the river)
+The Riverways (find a break in te road and go there)
+The Wetlands 
+(WAYPOINT)
+(kill/help Oak
+poison the tree & 
+complete "The Root of the Prolem")
+
 Town (complete "Deal with the Bandits")
-The Northern Forest
-The Caverns (get wp)
-Ancient Pyramid (kill Vaal Boss)
-The City of Sarn
+
+The Vaal Ruins
+The Northern Forest 
+(WAYPOINT), 
+go along the river)
+
+The Caverns (WAYPOINT)
+Ancient Pyramid (defeat Vaal Boss)
