@@ -23,4 +23,6 @@
 ◦ (complete "The Marooned Mariner")  
 ◦ (+1 SKILL POINT)  
 17. The Cavern of Wrath (WAYPOINT)  
-18. The Cavern of Anger (defeat Merviel)
+18. The Cavern of Anger (defeat Merviel)  
+  
+TOTAL AFTER ACT 1: +2 SKILL POINTS, +2 RESPEC POINTS, 1 TRIAL OF ASCENDANCY
