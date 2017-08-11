@@ -1,5 +1,6 @@
 *.pyc
 *.zip
+Guides/guide*
 build/
 dist*
 release/
