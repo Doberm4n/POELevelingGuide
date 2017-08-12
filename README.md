@@ -17,7 +17,7 @@ POELevelingGuide application is available on the [releases page](https://github.
 
 In preparing the Guide, information from the following sources was also used:
 
-https://pathofexile.gamepedia.com
-https://www.pathofexile.com/forum/view-thread/1727591/
-https://www.pathofexile.com/forum/view-thread/1931093/
+https://pathofexile.gamepedia.com  
+https://www.pathofexile.com/forum/view-thread/1727591/  
+https://www.pathofexile.com/forum/view-thread/1931093/  
 https://www.pathofexile.com/forum/view-thread/1933279/

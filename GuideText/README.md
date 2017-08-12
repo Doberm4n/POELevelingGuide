@@ -14,9 +14,9 @@
 **Notes:**
 
 > In preparing the Guide, information from the following sources was also used:
-https://pathofexile.gamepedia.com
-https://www.pathofexile.com/forum/view-thread/1727591/
-https://www.pathofexile.com/forum/view-thread/1931093/
+https://pathofexile.gamepedia.com  
+https://www.pathofexile.com/forum/view-thread/1727591/  
+https://www.pathofexile.com/forum/view-thread/1931093/  
 https://www.pathofexile.com/forum/view-thread/1933279/
 
 > .json file for POELevelingGuide app with this guide  can be found on [releases page](https://github.com/Doberm4n/POELevelingGuide/releases)  
