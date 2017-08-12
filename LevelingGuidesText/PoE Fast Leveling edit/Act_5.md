@@ -1,4 +1,4 @@
-The Ancest (teleport to Oriath)  
+The Ancest
 The Slave Pens:  
 ◦ (WAYPOINT)  
 ◦ (defeat Overseer Crow)  
