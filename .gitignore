@@ -10,3 +10,4 @@ release/
 *.exe
 /test
 /test2
+Configs/config.json
