@@ -355,7 +355,7 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 self.tabWidget.hide()
             self.setWindowTitle(self.windowTitle + " - " + os.path.basename(guide) + ' (' + os.path.dirname(guide) + ')')
             guideInfo = guideJson['common']['info']
-            self.guideLineEdit.setText(guideInfo['name'] + "" + guideInfo['version'] + "(" + guideInfo['date'] + " " + guideInfo['time'] + ")" + guideInfo['author'] + "" + guideInfo['notes'] + "")
+            self.guideLineEdit.setText(guideInfo['name'] + "" + guideInfo['version'] + "(" + guideInfo['date'] + " " + guideInfo['time'] + ")" + guideInfo['author'] + "" + guideInfo['notes'] + "" + guideInfo['URL'])
             self.statusbar.clearMessage()
         except Exception, e:
             self.tabWidget.hide()
