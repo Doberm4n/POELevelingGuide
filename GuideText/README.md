@@ -6,7 +6,7 @@
 
 **Notes:**
 
-> <Also used info from:>
+> Also used info from:
 - https://pathofexile.gamepedia.com
 - https://www.pathofexile.com/forum/view-thread/1727591/
 - https://www.pathofexile.com/forum/view-thread/1931093/
