@@ -19,4 +19,5 @@
 - https://www.pathofexile.com/forum/view-thread/1931093/
 - https://www.pathofexile.com/forum/view-thread/1933279/
 
-> .md files for each act can be imported into POELevelingGuide app. 
+> [.md files](src) for each act can be imported into POELevelingGuide app. 
+> 
