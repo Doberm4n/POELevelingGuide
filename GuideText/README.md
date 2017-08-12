@@ -13,7 +13,7 @@
 
 ## Notes:
 
-- >.json file for POELevelingGuide app with this guide can be found on [releases page](https://github.com/Doberm4n/POELevelingGuide/releases) 
+- >.json file for POELevelingGuide app with this guide can be found on [releases page](https://github.com/Doberm4n/POELevelingGuide/releases/latest) 
 - >.json file for POELevelingGuide app also can be downloaded by choosing Tools-Download Guide from GitHub in the POELevelingGuide app. It will download actual guide .json file from this repository and load guide in app.  
 - >[.md files](src) for each act can be imported into POELevelingGuide app. 
 
