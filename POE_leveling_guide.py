@@ -170,7 +170,10 @@ class POE_fast_leveling_guideApp(QtGui.QMainWindow, GUIMain.Ui_MainWindow):
                 curGuideFilename = os.path.basename(self.curGuide)
                 self.guideLineEdit.setText(curGuideFilename)
                 self.curDir = os.path.dirname(self.curGuide)
-                self.loadGuide(self.curGuide)
+                if os.path.isfile(self.curGuide):
+                    self.loadGuide(self.curGuide)
+                else:
+                    self.statusbar.showMessage('Guide not found (' + curGuideFilename + ')')
             else:
                 self.curDir = ""
                 self.curGuide = ""

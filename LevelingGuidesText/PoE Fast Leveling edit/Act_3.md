@@ -1,56 +1,55 @@
-﻿The City of Sarn  
-rescue Clarissa  
-Town  
-The Slums  
-The Crematorium:  
+﻿1. The City of Sarn (rescue Clarissa)  
+2. Town  
+3. The Slums  
+4. The Crematorium:  
 ◦ (WAYPOINT)  
 ◦ (complete TRIAL)  
 ◦ (obtain Tolman's Bracelet)  
-Town (complete "Lost in Love")  
-The Slums (find Sewer Grating)  
-The Sewers:  
+5. Town (complete "Lost in Love")  
+6. The Slums (find Sewer Grating)  
+7. The Sewers:  
 ◦ (WAYPOINT)  
 ◦ (find the three Platinum Busts)  
-The Marketplace:  
+8. The Marketplace:  
 ◦ (WAYPOINT)  
 ◦ (find Ornate Chest)  
-The Catacombs (TRIAL)  
-Town:  
+9. The Catacombs (TRIAL)  
+10. Town:  
 ◦ (complete "Victario's Secrets")  
 ◦ (+1 SKILL POINT)  
 ◦ (+2 RESPEC POINTS)  
-The Battlefront:  
+11. The Battlefront:  
 ◦ (WAYPOINT)  
 ◦ (find Ribbon Spool)  
-The Docks:  
+12. The Docks:  
 ◦ (WAYPOINT)  
 ◦ (talk to Fairgraves)  
 ◦ (find Thaumetic Sulphate)  
-The Solaris Temple Level 1 (WAYPOINT)  
-The Solaris Temple Level 2:  
+13. The Solaris Temple Level 1 (WAYPOINT)  
+14. The Solaris Temple Level 2:  
 ◦ (WAYPOINT)  
 ◦ (talk to Lady Dialla)  
-The Sewers (use Infernal Talc on Undying Passage)  
-Ebony Barracks:  
+15. The Sewers (use Infernal Talc on Undying Passage)  
+16. Ebony Barracks:  
 ◦ (WAYPOINT)  
 ◦ (defeat General Gravius)  
-Lunaris Temple Level 1 (WAYPOINT)  
-Lunaris Temple Level 2:  
+17. Lunaris Temple Level 1 (WAYPOINT)  
+18. Lunaris Temple Level 2:  
 ◦ (defeat Piety)  
 ◦ (obtain Tower Key)  
-Town:  
+19. Town:  
 ◦ (complete "Piety's Pets")  
 ◦ ???????????????????????????????????????????????????????????????????????????(+2 SKILL POINTS)  
-The Ebony Barracks  
-The Imperial Gardens (WAYPOINT)  
-The Library (WAYPOINT)  
-The Archives (find the four Golden Pages)  
-The Library (complete "A Fixture of Fate")  
-The Hedge Maze (TRIAL)  
-The Docks (complete "A Swig of Hope")  
-Town  
-The Imperial Gardens  
-The Lower Sceptre of God (WAYPOINT)  
-The Upper Sceptre of God (defeat Dominus)  
+20. The Ebony Barracks  
+21. The Imperial Gardens (WAYPOINT)  
+22. The Library (WAYPOINT)  
+23. The Archives (find the four Golden Pages)  
+24. The Library (complete "A Fixture of Fate")  
+25. The Hedge Maze (TRIAL)  
+26. The Docks (complete "A Swig of Hope")  
+27. Town  
+28. The Imperial Gardens  
+29. The Lower Sceptre of God (WAYPOINT)  
+30. The Upper Sceptre of God (defeat Dominus)  
 
 **TOTAL IN ACT 1:** +2 SKILL POINTS, +2 RESPEC POINTS, 1 TRIAL OF ASCENDANCY

@@ -1,9 +1,9 @@
-﻿The Southern Forest  
-Town  
-The Riverways:  
+﻿1. The Southern Forest  
+2. Town  
+3. The Riverways:  
 ◦ (WAYPOINT)  
 ◦ (follow the road)  
-Western Forest:  
+4. Western Forest:  
 ◦ (WAYPOINT)  
 ◦ (find a break in the road and go there)  
 ◦ (kill/help Alira)  
@@ -11,50 +11,50 @@ Western Forest:
 ◦ (defeat the Blackguards)  
 ◦ (open the blocked pass)  
 ◦ (find trees with spiderweb and go there)  
-Weaver’s Chambers  
-Weavers Nest (complete "Sharp and Cruel")  
-Lioneye's Watch (Act 1):  
+5. Weaver’s Chambers  
+6. Weavers Nest (complete "Sharp and Cruel")  
+7. Lioneye's Watch (Act 1):  
 ◦ (complete "The Way Forward")  
 ◦ (+1 SKILL POINT)  
-Town  
-The Old Fields  
-The Crossroads:  
+8. Town  
+9. The Old Fields  
+10. The Crossroads:  
 ◦ (WAYPOINT)  
 ◦ (follow the road)  
-The Broken Bridge:  
+11. The Broken Bridge:  
 ◦ (WAYPOINT)  
 ◦ (follow the road)  
 ◦ (kill/help Kraityn)  
-Town  
-The Crossroads (right from waypoint)  
-The Fellshrine Ruins  
-The Crypt Level 1:  
+12. Town  
+13. The Crossroads (right from waypoint)  
+14. The Fellshrine Ruins  
+15. The Crypt Level 1:  
 ◦ (WAYPOINT)  
 ◦ (TRIAL)  
-The Crypt Level 2 (obtain golden hand)  
-Town:  
+16. The Crypt Level 2 (obtain golden hand)  
+17. Town:  
 ◦ (complete "Through Sacred Ground")  
 ◦ (+2 RESPEC POINTS)  
-The Crossroads  
-The Chamber of Sins:  
+18. The Crossroads  
+19. The Chamber of Sins:  
 ◦ (left from waypoint)  
 ◦ (WAYPOINT)  
-The Chambers of Sins Level 2:  
+20. The Chambers of Sins Level 2:  
 ◦ (TRIAL)  
 ◦ (complete "Intruders in Black")  
-Town  
-The Riverways (find a break in te road and go there)  
-The Wetlands:  
+21. Town  
+22. The Riverways (find a break in te road and go there)  
+23. The Wetlands:  
 ◦ (WAYPOINT)  
 ◦ (kill/help Oak)  
 ◦ (poison the tree)  
 ◦ (complete "The Root of the Problem")  
-Town (complete "Deal with the Bandits")  
-The Vaal Ruins  
-The Northern Forest:  
+24. Town (complete "Deal with the Bandits")  
+25. The Vaal Ruins  
+26. The Northern Forest:  
 ◦ (WAYPOINT)  
 ◦ (go along the river)  
-The Caverns (WAYPOINT)  
-Ancient Pyramid (defeat Vaal Oversoul)  
+27. The Caverns (WAYPOINT)  
+28. Ancient Pyramid (defeat Vaal Oversoul)  
 
 **TOTAL IN ACT 1:** +2 SKILL POINTS, +2 RESPEC POINTS, 1 TRIAL OF ASCENDANCY
