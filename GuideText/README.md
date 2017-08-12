@@ -2,7 +2,7 @@
 
 ## Leveling Guide for Path of Exile: Fall of Oriath
 
-- [Act 1](Act_1.txt)
+- [Act 1](src/Act_1.txt)
 
 **Notes:**
 
