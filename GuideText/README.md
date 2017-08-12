@@ -11,9 +11,9 @@
 - [Act 9](src/Act_9.md)
 - [Act 10](src/Act_10.md)
 
-**Notes:**
+## Notes:
 
-**In preparing the Guide, information from the following sources was also used:**  
+**In preparing the Guide, information from the following sources was also used:**
 - https://pathofexile.gamepedia.com  
 - https://www.pathofexile.com/forum/view-thread/1727591/  
 - https://www.pathofexile.com/forum/view-thread/1931093/  
