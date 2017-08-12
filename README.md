@@ -2,7 +2,7 @@
 
 ## Leveling Guide for Path of Exile: Fall of Oriath  
 
-> Guide is about faster progression through acts, so it is intended for experienced players
+> This Guide is about faster progression through acts, so it is intended for experienced players
 
 - [Text version of the guide](https://github.com/Doberm4n/POELevelingGuide/tree/master/GuideText)
 
