@@ -1,6 +1,4 @@
-# Work in progress...
-
-## Leveling Guide for Path of Exile: Fall of Oriath
+# Leveling Guide for Path of Exile: Fall of Oriath
 
 - [Act 1](src/Act_1.md)
 - [Act 2](src/Act_2.md)
