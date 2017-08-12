@@ -20,4 +20,6 @@
 11. The Black Core (defeat Malachai)  
 12. Town  
 
-**TOTAL IN ACT 1:** +2 SKILL POINTS, +2 RESPEC POINTS, 1 TRIAL OF ASCENDANCY
+**TOTAL IN ACT 4:**  
+◦ +1 SKILL POINTS  
+◦ +2 RESPEC POINTS

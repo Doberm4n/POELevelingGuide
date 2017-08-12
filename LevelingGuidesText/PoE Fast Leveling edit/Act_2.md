@@ -57,4 +57,7 @@
 27. The Caverns (WAYPOINT)  
 28. Ancient Pyramid (defeat Vaal Oversoul)  
 
-**TOTAL IN ACT 1:** +2 SKILL POINTS, +2 RESPEC POINTS, 1 TRIAL OF ASCENDANCY
+**TOTAL IN ACT 2:**  
+◦ +1 SKILL POINTS or +3 SKILL POINTS if all bandits defeated  
+◦ +2 RESPEC POINTS  
+◦ 2 TRIALS OF ASCENDANCY
