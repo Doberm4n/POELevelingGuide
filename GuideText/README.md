@@ -19,5 +19,5 @@
 - https://www.pathofexile.com/forum/view-thread/1931093/
 - https://www.pathofexile.com/forum/view-thread/1933279/
 
+> .json file for with this guide for POELevelingGuide app can be found on [releases page](https://github.com/Doberm4n/POELevelingGuide/releases)
 > [.md files](src) for each act can be imported into POELevelingGuide app. 
-> 
