@@ -31,7 +31,7 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
 form = None
 formAbout = None
-version = '0.9.23'
+version = '0.9.24_test'
 link = '<a href="https://github.com/Doberm4n/POELevelingGuide">GitHub</a>'
 guideGitHubUrl = 'https://raw.githubusercontent.com/Doberm4n/POELevelingGuide/master/GuideJson/Latest/LevelingGuideForPoE.json'
 
