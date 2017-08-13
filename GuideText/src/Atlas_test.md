@@ -130,7 +130,7 @@ The Alluring Abyss (LEVEL 80)
 16\. Vaal Temple Map (TIER 16, LEVEL 83)    
 The Shaper's Realm (LEVEL 84)  
 
-**BONUS OBJECTIVES**  
+**BONUS OBJECTIVES:**  
 MAP TIER 1-5: Kill boss of magic or higher version of this map  
 MAP TIER 6-10: Kill boss of rare version of this map  
 MAP TIER 11-16: Kill boss of corrupted rare version of this map  
