@@ -1,7 +1,7 @@
 *.pyc
 *.zip
 Guides/guide*
-Guides
+Guides/*.json
 build/
 dist*
 release/
