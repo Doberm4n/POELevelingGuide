@@ -1,5 +1,5 @@
-1. Arcade Map (TIER 1, LEVEL 68)
-1. Crystal Ore Map (TIER 1, LEVEL 68)
+1. Arcade Map (TIER 1, LEVEL 68)  
+1. Crystal Ore Map (TIER 1, LEVEL 68)  
 1. Desert Map (TIER 1, LEVEL 68)
 1. Jungle Valley Map (TIER 1, LEVEL 68)
 2. Beach Map (TIER 2, LEVEL 69)
@@ -126,8 +126,8 @@ The Alluring Abyss (LEVEL 80)
 16. Forge of the Phoenix Map (TIER 16, LEVEL 83)
 16. Lair of the Hydra Map (TIER 16, LEVEL 83)
 16. Maze of the Minotaur Map (TIER 16, LEVEL 83)
-16. Pit of the Chimera Map (TIER 16, LEVEL 83)
-16. Vaal Temple Map (TIER 16, LEVEL 83)
+16. Pit of the Chimera Map (TIER 16, LEVEL 83)  
+16. Vaal Temple Map (TIER 16, LEVEL 83)  
 The Shaper's Realm (LEVEL 84)
 
 **BONUS OBJECTIVES**
