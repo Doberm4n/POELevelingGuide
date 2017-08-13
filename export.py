@@ -30,6 +30,7 @@ def createGuideAndImportText(self):
                         continue
                     for lines in range (len(text)):
                        text[lines] = text[lines].replace("\n", '')
+                       text[lines] = text[lines].replace("\.", '.')
             jsonData['guide']['tabs'].append({'text': [], 'name': filename.replace('_', ' '), 'isActCompleted':False})
             for j in range (len(text)):
                 jsonData['guide']['tabs'][guideStringCount]['text'].append({'string': text[j], 'isCompleted':False})
