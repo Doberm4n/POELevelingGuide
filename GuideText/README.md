@@ -11,7 +11,7 @@
 - [Act 9](src/Act_9.md)
 - [Act 10](src/Act_10.md)
 - [Atlas](src/Atlas.md)
-- [UBER Labyrinth](src/Uber_Labyrinth.md)
+- [ETERNAL Labyrinth](src/Eternal_Labyrinth.md)
 
 ## Notes:
 
