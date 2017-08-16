@@ -1,5 +1,5 @@
 Leveling Guide for PoE: FoO
 
 
-(Guide version: 2.4_test)
+(Guide version: 2.4)
 (https://git.io/v7HLc)
