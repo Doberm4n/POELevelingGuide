@@ -44,7 +44,6 @@
 28. The Solaris Concourse  
 29. The Harbour Bridge (go east)  
 30. The Sky Shrine (defeat Solaris and Lunaris)  
-
 **TOTAL IN ACT 8:**  
 ◦ +3 SKILL POINTS  
 ◦ +2 RESPEC POINTS  
