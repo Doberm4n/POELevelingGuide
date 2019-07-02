@@ -30,34 +30,28 @@
 14. The Fellshrine Ruins  
 15. The Crypt Level 1:  
 ◦ (WAYPOINT)  
-◦ (TRIAL)  
-16. The Crypt Level 2 (obtain golden hand)  
-17. Town:  
-◦ (complete "Through Sacred Ground")  
-◦ (+2 RESPEC POINTS)  
-18. The Crossroads  
-19. The Chamber of Sins:  
+◦ (TRIAL)   
+16. The Crossroads  
+17. The Chamber of Sins:  
 ◦ (left from waypoint)  
 ◦ (WAYPOINT)  
-20. The Chambers of Sins Level 2:  
+18. The Chambers of Sins Level 2:  
 ◦ (TRIAL)  
 ◦ (complete "Intruders in Black")  
-21. Town  
-22. The Riverways (find a break in te road and go there)  
-23. The Wetlands:  
+19. Town  
+20. The Riverways (find a break in te road and go there)  
+21. The Wetlands:  
 ◦ (WAYPOINT)  
 ◦ (kill/help Oak)  
 ◦ (poison the tree)  
 ◦ (complete "The Root of the Problem")  
-24. Town (complete "Deal with the Bandits")  
-25. The Vaal Ruins  
-26. The Northern Forest:  
+22. Town (complete "Deal with the Bandits")  
+23. The Vaal Ruins  
+24. The Northern Forest:  
 ◦ (WAYPOINT)  
 ◦ (go along the river)  
-27. The Caverns (WAYPOINT)  
-28. Ancient Pyramid (defeat Vaal Oversoul)  
-
+25. The Caverns (WAYPOINT)  
+26. Ancient Pyramid (defeat Vaal Oversoul)  
 **TOTAL IN ACT 2:**  
 ◦ +1 SKILL POINTS or +3 SKILL POINTS if all bandits defeated  
-◦ +2 RESPEC POINTS  
 ◦ 2 TRIALS OF ASCENDANCY
