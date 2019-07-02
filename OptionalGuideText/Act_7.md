@@ -1,4 +1,4 @@
-1. The Broken Bridge (?find Weylam's Silver Locket)  
+1. The Broken Bridge  
 2. The Crossroads:  
 ◦ (WAYPOINT)  
 ◦ (go east from WP)  
@@ -16,8 +16,7 @@
 11. The Ashen Fields (WAYPOINT)  
 12. The Forest Encampment (defeat Greust)  
 13. The Northern Forest (WAYPOINT)  
-14. Town:  
-◦ (?complete "The Silver Locket")  
+14. Town:   
 ◦ (complete "Essence of the Artist")  
 ◦ (complete "The Master of a Million Faces")  
 ◦ (+1 SKILL POINT)  
@@ -42,7 +41,6 @@
 23. The Temple of Decay Level 1  
 24. The Tempel of Decay Level 2  
 25. Arakaali's Web (defeat Arakaali)  
-
 **TOTAL IN ACT 7:**  
 ◦ +3 SKILL POINTS  
 ◦ +2 RESPEC POINTS  
