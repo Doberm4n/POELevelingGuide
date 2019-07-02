@@ -22,6 +22,5 @@
 16. The Cavern of Wrath (WAYPOINT)  
 17. The Cavern of Anger (defeat Merviel)  
 **TOTAL IN ACT 1:**  
-◦ +2 SKILL POINTS  
-◦ +2 RESPEC POINTS  
+◦ +2 SKILL POINTS   
 ◦ 1 TRIAL OF ASCENDANCY
