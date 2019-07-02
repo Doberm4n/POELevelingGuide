@@ -17,23 +17,20 @@
 ◦ (WAYPOINT)  
 ◦ (defeat High Templar Avarius)  
 10. The Torched Courts  
-11. The Ruined Square:  
-◦ (WAYPOINT)  
-◦ (defeat Utala)  
+11. The Ruined Square (WAYPOINT)   
 12. The Reliquary:  
 ◦ (WAYPOINT)  
 ◦ (find three Kitava's Torments)  
 13. Town:  
-◦ (complete "Death to Purity")  
-◦ (complete "The King's Feast")  
+◦ (complete "Death to Purity")    
 ◦ (complete "Kitava's Torments")  
 ◦ (+1 SKILL POINT)  
-◦ (+2 RESPEC POINTS)  
-14. The Ossuary  
-15. The Ruined Square  
-16. The Cathedral Rooftop (WAYPOINT)  
-17. Cathedral Apex (fight Kitava)  
-
+◦ (+2 RESPEC POINTS) 
+14. The Ruined Square (near waypoint)  
+15. The Ossuary (find Sign of Purity)  
+16. The Ruined Square  
+17. The Cathedral Rooftop (WAYPOINT, access after Kitava)  
+18. Cathedral Apex (fight Kitava)  
 **TOTAL IN ACT 5:**  
 ◦ +2 SKILL POINTS  
 ◦ +2 RESPEC POINTS
