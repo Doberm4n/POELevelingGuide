@@ -19,7 +19,6 @@
 ◦ (defeat Malichai's three Guardians)  
 11. The Black Core (defeat Malachai)  
 12. Town  
-
 **TOTAL IN ACT 4:**  
 ◦ +1 SKILL POINTS  
 ◦ +2 RESPEC POINTS
