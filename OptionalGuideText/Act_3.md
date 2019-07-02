@@ -1,4 +1,4 @@
-﻿1. The City of Sarn (rescue Clarissa)  
+1. The City of Sarn (rescue Clarissa)  
 2. Town  
 3. The Slums  
 4. The Crematorium:  
@@ -23,7 +23,6 @@
 ◦ (find Ribbon Spool)  
 12. The Docks:  
 ◦ (WAYPOINT)  
-◦ (talk to Fairgraves)  
 ◦ (find Thaumetic Sulphate)  
 13. The Solaris Temple Level 1 (WAYPOINT)  
 14. The Solaris Temple Level 2:  
@@ -42,16 +41,14 @@
 ◦ (+1 SKILL POINT)  
 20. The Ebony Barracks  
 21. The Imperial Gardens (WAYPOINT)  
+◦ (WAYPOINT) 
+◦ (complete TRIAL) 
 22. The Library (WAYPOINT)  
 23. The Archives (find the four Golden Pages)  
-24. The Library (complete "A Fixture of Fate")  
-25. The Hedge Maze (TRIAL)  
-26. The Docks (complete "A Swig of Hope")  
-27. Town  
-28. The Imperial Gardens  
-29. The Lower Sceptre of God (WAYPOINT)  
-30. The Upper Sceptre of God (defeat Dominus)  
-
+24. The Library (complete "A Fixture of Fate")      
+25. The Imperial Gardens  
+26. The Lower Sceptre of God (WAYPOINT)  
+37. The Upper Sceptre of God (defeat Dominus)  
 **TOTAL IN ACT 3:**  
 ◦ +2 SKILL POINTS  
 ◦ +2 RESPEC POINTS  
