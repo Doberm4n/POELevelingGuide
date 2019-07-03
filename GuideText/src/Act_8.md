@@ -43,7 +43,7 @@
 ◦ (defeat Dusk)  
 ◦ (take Moon Orb)  
 29. The Solaris Temple Level 1
-30. The Solaris Concourse  
+30. The Solaris Concourse (WAYPOINT)  
 31. The Harbour Bridge (go east)  
 32. The Sky Shrine (defeat Solaris and Lunaris)  
 **TOTAL IN ACT 8:**  
