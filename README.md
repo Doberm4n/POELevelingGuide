@@ -6,6 +6,8 @@
 
 - [Text version of the guide](https://github.com/Doberm4n/POELevelingGuide/tree/master/GuideText)
 
+- Guide includes optional quests with skill ponts rewards and trials of ascendancy locations
+
 - There is also a simple POELevelingGuide app which will help to mark your progress
 
 ![alt text](https://github.com/Doberm4n/POELevelingGuide/blob/master/screenshots/mainWindow_1.png)
