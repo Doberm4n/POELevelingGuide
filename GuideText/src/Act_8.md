@@ -42,9 +42,10 @@
 28. The Lunaris Temple Level 2:  
 ◦ (defeat Dusk)  
 ◦ (take Moon Orb)  
-29. The Solaris Concourse  
-30. The Harbour Bridge (go east)  
-31. The Sky Shrine (defeat Solaris and Lunaris)  
+29. The Solaris Temple Level 1
+30. The Solaris Concourse  
+31. The Harbour Bridge (go east)  
+32. The Sky Shrine (defeat Solaris and Lunaris)  
 **TOTAL IN ACT 8:**  
 ◦ +3 SKILL POINTS  
 ◦ +2 RESPEC POINTS  
