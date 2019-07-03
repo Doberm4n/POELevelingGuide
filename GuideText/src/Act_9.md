@@ -8,9 +8,7 @@
 ◦ (find Storm-Weathered Chest)  
 ◦ (defeat Mumies)  
 ◦ (obtain Storm Blade)  
-7. Town:  
-◦ (complete "The Storm Blade")  
-◦ (+1 SKILL POINT)  
+7. Town (complete "The Storm Blade")  
 8. The Vastiri Desert (note that you can't get through the sandstorm to the Oasis)  
 9. Town: 
 ◦ (Talk to Sin)
