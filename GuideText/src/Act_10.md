@@ -14,7 +14,8 @@
 ◦ (obtain The Staff of Purity)  
 13. Town (complete "Death and Rebirth")  
 14. The Ravaged Square (talk to Innocence)  
-15. The Control Blocks (defeat Vilenta)
+15. The Control Blocks
+16. Arena (defeat Vilenta)
 15. The Canals  
 16. The Feeding Trough (defeat Kitava)  
 17. Town:  
