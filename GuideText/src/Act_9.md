@@ -26,7 +26,7 @@
 ◦ (WAYPOINT)  
 ◦ (TRIAL)  
 18. The Quarry (WAYPOINT)  
-19. Arena:  
+19. Shrine of the Winds:  
 ◦ (defeat Kira and Gurakhan)  
 ◦ (obtain The Sekhema Feather)  
 20. The Refinery (find Trarthan Powder)  
