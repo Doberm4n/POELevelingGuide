@@ -13,33 +13,32 @@
 9. Town: 
 ◦ (Talk to Sin)
 ◦ (Get Bottled Storm from Petarus and Vanja)
-10. The Oasis  
-11. The Vastiri Desert
-12. The Oasis (defeat Shakari)
-13. Town:  
+10. The Vastiri Desert
+11. The Oasis (defeat Shakari)
+12. Town:  
 ◦ (complete "Queen of the Sands")  
 ◦ (+1 SKILL POINT)  
-14. The Foothills (WAYPOINT)  
-15. The Boiling Lake (find Basilisk Acid)  
-16. The Foothills  
-17. The Tunnel:  
+13. The Foothills (WAYPOINT)  
+14. The Boiling Lake (find Basilisk Acid)  
+15. The Foothills  
+16. The Tunnel:  
 ◦ (WAYPOINT)  
 ◦ (TRIAL)  
-18. The Quarry (WAYPOINT)  
-19. Arena:  
+17. The Quarry (WAYPOINT)  
+18. Arena:  
 ◦ (defeat Kira and Gurakhan)  
 ◦ (obtain The Sekhema Feather)  
-20. The Refinery (find Trarthan Powder)  
-21. Town:  
+19. The Refinery (find Trarthan Powder)  
+20. Town:  
 ◦ (complete "The Ruler of Highgate")  
 ◦ (+1 SKILL POINT)  
 ◦ (progress "Reccuring Nightmare")  
-22. The Quarry  
-23. The Belly of The Beast  
-24. The Rotting Core  
-25. The Black Heart (defeat the spirits of Shavronne, Maligaro and Doedre)  
-26. The Black Heart (defeat The Depraved Trinity)  
-27. Sail to Oriath  
+21. The Quarry  
+22. The Belly of The Beast  
+23. The Rotting Core  
+24. The Black Heart (defeat the spirits of Shavronne, Maligaro and Doedre)  
+25. The Black Heart (defeat The Depraved Trinity)  
+26. Sail to Oriath  
 **TOTAL IN ACT 9:**  
 ◦ +2 SKILL POINTS    
 ◦ 1 TRIAL OF ASCENDANCY
