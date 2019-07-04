@@ -4,7 +4,8 @@
 3. The Ravaged Square (WAYPOINT)    
 4. Town (complete "Safe Passage")  
 5. The Ravaged Square  
-6. The Ossuary (TRIAL)
+6. The Ossuary 
+7. The Bone Pit (TRIAL)
 9. The Ravaged Square  
 10. The Torched Courts  
 11. The Desecrated Chambers (WAYPOINT)  
