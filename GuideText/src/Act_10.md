@@ -1,5 +1,7 @@
-1. The Cathedral Rooftop (defeat Kitava's Cultists)  
-2. The Ravaged Square (WAYPOINT)    
+1. The Cathedral Rooftop
+2. Cathedral Apex (defeat Kitava's Cultists) 
+3. The Cathedral Rooftop
+3. The Ravaged Square (WAYPOINT)    
 4. Town (complete "Safe Passage")  
 5. The Ravaged Square  
 6. The Ossuary (TRIAL)
