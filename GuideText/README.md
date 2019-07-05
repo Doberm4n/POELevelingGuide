@@ -20,7 +20,7 @@
 - >[.md files](src) for each act can be imported into POELevelingGuide app. 
 
 ## Glossary
-- [Glossary](./OptionalGuideText/Glossary.md)
+- [Glossary](/./OptionalGuideText/Glossary.md)
 
 **In preparing the Guide, information from the following sources was also used:**
 - https://pathofexile.gamepedia.com  
