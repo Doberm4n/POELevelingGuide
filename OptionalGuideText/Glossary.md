@@ -16,7 +16,8 @@
 
 - **Unholy** Damage is a buff granted by some corrupted minions from Catarina missions. It makes enemies and allies around the corrupted undead deal increased damage;
 
-- Ailments
+#Ailments
+
 - > **Ignite** is an elemental ailment associated with fire that causes the affected target to take burning damage (fire damage over time);
 - > **Chill** is an elemental ailment inherent to cold that applies a slow effect to the character, reducing the animation speed at which the character plays;
 - > **Freeze** is an elemental ailment associated with cold that slows for 100% which completely prevents the target from moving, attacking, or using any skills;
