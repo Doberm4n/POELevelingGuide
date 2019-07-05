@@ -16,7 +16,7 @@
 
 - **Unholy** Damage is a buff granted by some corrupted minions from Catarina missions. It makes enemies and allies around the corrupted undead deal increased damage;
 
-- **Consecrated** ground is a beneficial ground effect that provides additional life regeneration. The character and his allies regenerate an additional 6% of their maximum life per second.[a] Hits against enemies on consecrated ground have 100% increased critical strike chance$
+- **Consecrated** ground is a beneficial ground effect that provides additional life regeneration. The character and his allies regenerate an additional 6% of their maximum life per second.[a] Hits against enemies on consecrated ground have 100% increased critical strike chance;
 
 #### Ailments
 
