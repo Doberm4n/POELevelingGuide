@@ -30,3 +30,9 @@
 - > **Bleed** is an ailment that deals physical damage over time to the affected target. Moving targets suffer increased bleeding damage. Only physical damage from attacks can inflict bleed;
 - > **Poison** is an ailment that deals chaos damage over time to the affected target;
 - > **Ignite** is an elemental ailment associated with fire that causes the affected target to take burning damage (fire damage over time);
+
+#### Charges
+
+- > **Endurance** Endurance charges are one of the three charge types. They are associated with strength and represent a temporary increase to the ability to endure pain during combat. They are visualized as glowing red orbs surrounding the character. The physical damage reduction stacks with the damage reduction from armour, so that they are both applied at the same time;
+- > **Frenzy** Frenzy charges are one of the three charge types. They are associated with dexterity and represent a temporary increase to swiftness and fervor during combat. The charges are visualized as glowing green orbs surrounding the character;
+- > **Power** Power charges are one of the three charge types. They grant a temporary buff associated with intelligence and represent an increase to concentration and arcane energies during combat. They are visualized as glowing blue orbs surrounding the character. Gaining a new power charge resets the duration of all remaining power charges;
