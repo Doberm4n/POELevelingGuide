@@ -18,6 +18,10 @@
 
 - **Consecrated** ground is a beneficial ground effect that provides additional life regeneration. The character and his allies regenerate an additional 6% of their maximum life per second.[a] Hits against enemies on consecrated ground have 100% increased critical strike chance;
 
+- **Damage over time** (often refered to as DoT) is a damage inflicted continuously over a period of time. Unlike the other three damage sources, damage over time does not hit;
+
+- **Focus** is a skill granted by certain Veiled item modifiers. You cannot use the Focus skill unless you have a modifier related to the Focus skill equipped;
+
 #### Ailments
 
 - > **Ignite** is an elemental ailment associated with fire that causes the affected target to take burning damage (fire damage over time);
