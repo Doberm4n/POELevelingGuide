@@ -19,6 +19,8 @@
 - >.json file for POELevelingGuide app also can be downloaded by choosing Tools-Download Guide from GitHub in the POELevelingGuide app. It will download actual guide .json file from this repository and load guide in app.  
 - >[.md files](src) for each act can be imported into POELevelingGuide app. 
 
+- [Dictionary](OptionalGuideText/Dictionary.md)
+
 **In preparing the Guide, information from the following sources was also used:**
 - https://pathofexile.gamepedia.com  
 - https://www.pathofexile.com/forum/view-thread/1727591/  
