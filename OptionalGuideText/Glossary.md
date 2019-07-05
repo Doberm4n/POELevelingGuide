@@ -12,11 +12,15 @@
 
 - **Conflux** is a type of buff that causes hits from all combined damage types to apply chill, shock, and/or ignite, overriding the usual rule that only cold damage can chill, lightning damage can shock and fire damage can ignite;
 
-- **Unholy** Might is a buff. 30% of your physical damage is added as extra chaos damage;
+- **Unholy Might** is a buff. 30% of your physical damage is added as extra chaos damage;
 
-- **Unholy** Damage is a buff granted by some corrupted minions from Catarina missions. It makes enemies and allies around the corrupted undead deal increased damage;
+- **Unholy Damage** is a buff granted by some corrupted minions from Catarina missions. It makes enemies and allies around the corrupted undead deal increased damage;
 
-- **Consecrated** ground is a beneficial ground effect that provides additional life regeneration. The character and his allies regenerate an additional 6% of their maximum life per second.[a] Hits against enemies on consecrated ground have 100% increased critical strike chance;
+- **Consecrated ground** is a beneficial ground effect that provides additional life regeneration. The character and his allies regenerate an additional 6% of their maximum life per second.[a] Hits against enemies on consecrated ground have 100% increased critical strike chance;
+
+- **Hinder** is a debuff that reduces movement speed on the affected target. A creature can only be affected by one Hinder at a time; if a creature is hindered by multiple sources only the strongest Hinder takes effect. Hinder is applied by spells, just like maim is by attacks. Since maim and hinder are different debuffs, an enemy can be affected by both simultaneously;
+
+- **Ash** is a debuff that causes the affected target to have less movement speed and increased fire damage taken.[1] Ash has a duration of 4 seconds;
 
 #### Ailments
 
