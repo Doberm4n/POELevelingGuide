@@ -22,6 +22,10 @@
 
 - **Focus** is a skill granted by certain Veiled item modifiers. You cannot use the Focus skill unless you have a modifier related to the Focus skill equipped;
 
+- **Adrenaline** is a buff that grants bonus attack damage, movement, attack and cast speed, and physical damage reduction;
+
+- **Impale** is a debuff that deals additional physical damage to the affected target each time it is hit;
+
 #### Ailments
 
 - > **Ignite** is an elemental ailment associated with fire that causes the affected target to take burning damage (fire damage over time);
