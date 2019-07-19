@@ -1,133 +1,180 @@
-1\. Arcade Map (TIER 1, LEVEL 68)  
-1\. Crystal Ore Map (TIER 1, LEVEL 68)  
-1\. Desert Map (TIER 1, LEVEL 68)  
-1\. Jungle Valley Map (TIER 1, LEVEL 68)  
-2\. Beach Map (TIER 2, LEVEL 69)  
-2\. Factory Map (TIER 2, LEVEL 69)  
-2\. Ghetto Map (TIER 2, LEVEL 69)  
-2\. Oasis Map (TIER 2, LEVEL 69)  
-The Apex of Sacrifice (LEVEL 70)  
-3\. Arid Lake Map (TIER 3, LEVEL 70)  
-3\. Cavern Map (TIER 3, LEVEL 70)  
-3\. Channel Map (TIER 3, LEVEL 70)  
-3\. Grotto Map (TIER 3, LEVEL 70)  
-3\. Marshes Map (TIER 3, LEVEL 70)  
-3\. Sewer Map (TIER 3, LEVEL 70)  
-3\. Vaal Pyramid Map (TIER 3, LEVEL 70)  
-3\. Vaults of Atziri (TIER 3, LEVEL 70) (UNIQUE)  
-4\. Academy Map (TIER 4, LEVEL 71)  
-4\. Acid Lakes Map (TIER 4, LEVEL 71)  
-4\. Dungeon Map (TIER 4, LEVEL 71)  
-4\. Graveyard Map (TIER 4, LEVEL 71)  
-4\. Hallowed Ground (TIER 4, LEVEL 71) (UNIQUE)  
-4\. Phantasmagoria Map (TIER 4, LEVEL 71)  
-4\. Villa Map (TIER 4, LEVEL 71)  
-4\. Waste Pool Map (TIER 4, LEVEL 71)  
-5\. Burial Chambers Map (TIER 5, LEVEL 72)  
-5\. Dunes Map (TIER 5, LEVEL 72)  
-5\. Mesa Map (TIER 5, LEVEL 72)  
-The Pale Court (LEVEL 72)  
-5\. Peninsula Map (TIER 5, LEVEL 72)  
-5\. Pit Map (TIER 5, LEVEL 72)  
-5\. Primordial Pool Map (TIER 5, LEVEL 72)  
-5\. Spider Lair Map (TIER 5, LEVEL 72)  
-5\. Tower Map (TIER 5, LEVEL 72)  
-6\. Canyon Map (TIER 6, LEVEL 73)  
-6\. Quarry Map (TIER 6, LEVEL 73)  
-6\. Racecourse Map (TIER 6, LEVEL 73)  
-6\. Ramparts Map (TIER 6, LEVEL 73)  
-6\. Spider Forest Map (TIER 6, LEVEL 73)  
-6\. Strand Map (TIER 6, LEVEL 73)  
-6\. Whakawairua Tuahu (TIER 6, LEVEL 73) (UNIQUE)  
-6\. Thicket Map (TIER 6, LEVEL 73)  
-6\. Vaal City Map (TIER 6, LEVEL 73)  
-6\. Wharf Map (TIER 6, LEVEL 73)  
-7\. Arachnid Tomb Map (TIER 7, LEVEL 74)  
-7\. Armoury Map (TIER 7, LEVEL 74)  
-7\. Ashen Wood Map (TIER 7, LEVEL 74)  
-7\. Castle Ruins Map (TIER 7, LEVEL 74)  
-7\. Catacombs Map (TIER 7, LEVEL 74)  
-7\. Olmec's Sanctum (TIER 7, LEVEL 74) (UNIQUE)  
-7\. Cells Map (TIER 7, LEVEL 74)  
-7\. Mud Geyser Map (TIER 7, LEVEL 74)  
-8\. Arachnid Nest Map (TIER 8, LEVEL 75)  
-8\. Arena Map (TIER 8, LEVEL 75)  
-8\. Atoll Map (TIER 8, LEVEL 75)  
-8\. Maelström of Chaos (TIER 8, LEVEL 75) (UNIQUE)  
-8\. Barrows Map (TIER 8, LEVEL 75)  
-8\. Bog Map (TIER 8, LEVEL 75)  
-8\. Cemetery Map (TIER 8, LEVEL 75)  
-The Lord's Labyrinth (Endgame version) (LEVEL 75)  
-8\. Pier Map (TIER 8, LEVEL 75)  
-8\. Shore Map (TIER 8, LEVEL 75)  
-8\. Tropical Island Map (TIER 8, LEVEL 75)  
-8\. Untainted Paradise (TIER 8, LEVEL 75) (UNIQUE)  
-9\. Coves Map (TIER 9, LEVEL 76)  
-9\. Crypt Map (TIER 9, LEVEL 76)  
-9\. The Coward's Trial (TIER 9, LEVEL 76) (UNIQUE)  
-9\. Museum Map (TIER 9, LEVEL 76)  
-9\. The Putrid Cloister (TIER 9, LEVEL 76) (UNIQUE)  
-9\. Orchard Map (TIER 9, LEVEL 76)  
-9\. Overgrown Shrine Map (TIER 9, LEVEL 76)  
-9\. Acton's Nightmare (TIER 9, LEVEL 76) (UNIQUE)  
-9\. Promenade Map (TIER 9, LEVEL 76)  
-9\. Hall of Grandmasters (TIER 9, LEVEL 76) (UNIQUE)  
-9\. Reef Map (TIER 9, LEVEL 76)  
-9\. Mao Kun (TIER 9, LEVEL 76) (UNIQUE)  
-9\. Temple Map (TIER 9, LEVEL 76)  
-9\. Poorjoy's Asylum (TIER 9, LEVEL 76) (UNIQUE)  
-10\. Arsenal Map (TIER 10, LEVEL 77)  
-10\. Colonnade Map (TIER 10, LEVEL 77)  
-10\. Courtyard Map (TIER 10, LEVEL 77)  
-10\. The Vinktar Square (TIER 10, LEVEL 77) (UNIQUE)  
-10\. Malformation Map (TIER 10, LEVEL 77)  
-10\. Port Map (TIER 10, LEVEL 77)  
-10\. Terrace Map (TIER 10, LEVEL 77)  
-10\. Underground River Map (TIER 10, LEVEL 77)  
-10\. Caer Blaidd, Wolfpack's Den (TIER 10, LEVEL 77) (UNIQUE)  
-11\. Bazaar Map (TIER 11, LEVEL 78)  
-11\. Chateau Map (TIER 11, LEVEL 78)  
-11\. The Perandus Manor (TIER 11, LEVEL 78) (UNIQUE)  
-11\. Excavation Map (TIER 11, LEVEL 78)  
-11\. Precinct Map (TIER 11, LEVEL 78)  
-11\. Torture Chamber Map (TIER 11, LEVEL 78)  
-11\. Oba's Cursed Trove (TIER 11, LEVEL 78) (UNIQUE)  
-11\. Underground Sea Map (TIER 11, LEVEL 78)  
-11\. Wasteland Map (TIER 11, LEVEL 78)  
-12\. Crematorium Map (TIER 12, LEVEL 79)  
-12\. Estuary Map (TIER 12, LEVEL 79)  
-12\. Ivory Temple Map (TIER 12, LEVEL 79)  
-12\. Necropolis Map (TIER 12, LEVEL 79)  
-12\. Death and Taxes (TIER 12, LEVEL 79) (UNIQUE)  
-12\. Plateau Map (TIER 12, LEVEL 79)  
-12\. Residence Map (TIER 12, LEVEL 79)  
-12\. Shipyard Map (TIER 12, LEVEL 79)  
-12\. Vault Map (TIER 12, LEVEL 79)  
-13\. Beacon Map (TIER 13, LEVEL 80)  
-13\. Gorge Map (TIER 13, LEVEL 80)  
-13\. High Gardens Map (TIER 13, LEVEL 80)  
-13\. Lair Map (TIER 13, LEVEL 80)  
-13\. Plaza Map (TIER 13, LEVEL 80)  
-13\. Scriptorium Map (TIER 13, LEVEL 80)  
-13\. Sulphur Wastes Map (TIER 13, LEVEL 80)  
-13\. Waterways Map (TIER 13, LEVEL 80)  
-The Alluring Abyss (LEVEL 80)  
-14\. Maze Map (TIER 14, LEVEL 81)  
-14\. Mineral Pools Map (TIER 14, LEVEL 81)  
-14\. Palace Map (TIER 14, LEVEL 81)  
-14\. Shrine Map (TIER 14, LEVEL 81)  
-14\. Springs Map (TIER 14, LEVEL 81)  
-14\. Volcano Map (TIER 14, LEVEL 81)  
-15\. Abyss Map (TIER 15, LEVEL 82)  
-15\. Colosseum Map (TIER 15, LEVEL 82)  
-15\. Core Map (TIER 15, LEVEL 82)  
-15\. Dark Forest Map (TIER 15, LEVEL 82)  
-15\. Overgrown Ruin Map (TIER 15, LEVEL 82)  
-16\. Forge of the Phoenix Map (TIER 16, LEVEL 83)  
-16\. Lair of the Hydra Map (TIER 16, LEVEL 83)  
-16\. Maze of the Minotaur Map (TIER 16, LEVEL 83)  
-16\. Pit of the Chimera Map (TIER 16, LEVEL 83)    
-16\. Vaal Temple Map (TIER 16, LEVEL 83)    
+1\. Desert Map
+1\. Haunted Mansion Map  
+1\. Ivory Temple Map
+1\. Sulphur Vents Map
+
+2\. Glacier Map
+2\. Alleyways Map
+2\. Barrows Map
+2\. Thicket Map 
+2\. Armoury Map
+2\. Lookout Map
+
+3\. Leyline Map
+3\. Mausoleum Map
+3\. Ashen Wood Map
+3\. Relic Chambers Map
+3\. Pier Map
+3\. Arid Lake Map
+3\. Arachnid Tomb Map
+3\. Flooded Mine Map
+3\. Wharf Map
+3\. Pen Map
+
+4\. Excavation Map
+4\. Crater Map
+4\. City Square Map
+4\. Fields Map
+4\. Cage Map
+4\. Grotto Map
+4\. Cursed Crypt Map
+4\. Strand Map
+4\. Channel Map
+4\. Beach Map
+4\. The Coward’s Trial (UNIQUE)
+4\. Whakawairua Tuahu (UNIQUE)
+
+5\. Marshes Map
+5\. Spider Lair Map
+5\. Tropical Island Map
+5\. Ramparts Map
+5\. Burial Chambers Map
+5\. Mesa Map
+5\. Jungle Valley Map
+5\. Peninsula Map
+5\. Arcade Map
+5\. Fungal Hollow Map
+5\. The Beachhead, T5, Harbinger Map (UNIQUE)
+
+6\. Mud Geyser Map
+6\. Courtyard Map
+6\. Ancient City Map
+6\. Atoll Map
+6\. Maze Map
+6\. Promenade Map
+6\. Cells Map
+6\. Phantasmagoria Map
+6\. Waste Pool Map
+6\. Overgrown Ruin Map
+6\. Primordial Pool Map
+6\. Doryani’s Machinarium (UNIQUE)
+6\. The Hall of Grandmasters (UNIQUE)
+6\. Maelström of Chaos (UNIQUE)
+6\. The Vinktar Square (UNIQUE)
+
+7\. Residence Map
+7\. Spider Forest Map
+7\. Arena Map
+7\. Dungeon Map
+7\. Racecourse Map
+7\. Graveyard Map
+7\. Vault Map
+7\. Waterways Map
+7\. Conservatory Map
+7\. Laboratory Map
+7\. Overgrown Shrine Map
+7\. Acton’s Nightmare (UNIQUE)
+
+8\. Iceberg Map
+8\. Pit Map
+8\. Ghetto Map
+8\. Bone Crypt Map
+8\. Chateau Map
+8\. Toxic Sewer Map
+8\. Scriptorium Map
+8\. Dunes Map
+8\. Factory Map
+8\. Necropolis Map
+8\. Estuary Map
+8\. Olmec’s Sanctum (UNIQUE)
+8\. Perandus Manor (UNIQUE)
+8\. Pillars of Arun (UNIQUE)
+8\. Death and Taxes (UNIQUE)
+
+9\. Arachnid Nest Map
+9\. Port Map
+9\. Villa Map
+9\. Mineral Pools Map
+9\. Underground River Map
+9\. Underground Sea Map
+9\. Castle Ruins Map
+9\. Shore Map
+9\. Moon Temple Map
+9\. Arsenal Map
+9\. Lighthouse Map
+9\. Mao Kun (UNIQUE)
+9\. The Twilight Temple (UNIQUE)
+9\. Caer Blaidd, Wolfpack’s Den (UNIQUE)
+9\. Oba’s Cursed Trove (UNIQUE)
+
+10\. Sepulchre Map
+10\. Coral Ruins Map
+10\. Volcano Map
+10\. Geode Map
+10\. Bog Map
+10\. Plateau Map
+10\. Lava Chamber Map
+10\. Bazaar Map
+10\. Academy Map
+10\. Temple Map
+10\. Poorjoy’s Asylum (UNIQUE)
+10\. The Beachhead, T10, Harbinger Map (UNIQUE)
+
+11\. Infested Valley Map
+11\. Dig Map
+11\. Lair Map
+11\. Malformation Map
+11\. Siege Map
+11\. Gardens Map
+11\. Crimson Temple Map
+11\. Precinct Map
+11\. Colonnade Map
+11\. Museum Map
+11\. The Putrid Cloister (UNIQUE)
+
+12\. Lava Lake Map
+12\. Cemetery Map
+12\. Vaal Pyramid Map
+12\. Park Map
+12\. Shipyard Map
+12\. Core Map
+12\. Carcass Map
+12\. Canyon Map
+12\. Colosseum Map
+12\. Hallowed Ground (UNIQUE)
+12\. Vaults of Atziri (UNIQUE)
+
+13\. Tower Map
+13\. Sunken City Map
+13\. Defiled Cathedral Map
+13\. Belfry Map
+13\. Coves Map
+13\. Shrine Map
+13\. Plaza Map
+13\. Terrace Map
+13\. Reef Map
+
+14\. Primordial Blocks Map
+14\. Orchard Map
+14\. Wasteland Map
+14\. Crystal Ore Map
+14\. Courthouse Map
+14\. Basilica Map
+14\. Dark Forest Map
+
+15\. Summit Map
+15\. Caldera Map
+15\. Acid Caverns Map
+15\. Desert Springs Map
+15\. Palace Map
+15\. The Beachhead, T15, Harbinger Map (UNIQUE)
+
+16\. Vaal Temple Map
+16\. Forge of the Phoenix Map
+16\. Maze of the Minotaur Map
+16\. Pit of the Chimera Map
+16\. Lair of the Hydra Map
+
 The Shaper's Realm (LEVEL 84)  
 
 **BONUS OBJECTIVES:**  
