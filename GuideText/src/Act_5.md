@@ -1,7 +1,7 @@
 1. The Ancest
 2. The Slave Pens:  
 ◦ (WAYPOINT)  
-◦ (defeat Overseer Crow)  
+◦ (defeat Overseer Krow)  
 3. Town (complete "Return to Oriath")  
 4. The Control Blocks:  
 ◦ (obtain Miasmeter)  
